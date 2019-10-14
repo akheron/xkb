@@ -13,7 +13,9 @@
 //              ori pk ru scc sy syr tel th tj tam ua uz
 
 // PC models
-! $pcmodels = pc101 pc102 pc104 pc105
+! $pcmodels = pc101 pc102 pc104 pc105 \
+              pc104angle-z pc104wide-qu pc104aw-zqu pc104awing pc105angle pc105aw-sl \
+              pc104curl-z              pc104caw-zqu pc104cawing pc105curl pc105caw-sl
 
 // Jolla devices and keyboards
 ! $jollamodels = jollasbj
@@ -90,6 +92,7 @@
 ! $evdevkbds = ibm_spacesaver
 
 ! $dvoraklayouts = br ca de ee es fr gb no pl se us
+! $colemaklayouts = al at ba be bg br ca cz de dk es fi fr gb gr hr hu il is it latam nl no pl pt ro rs ru se si tr us
 
 ! model		=	keycodes
   pc98		=	evdev(pc98)
@@ -97,6 +100,17 @@
  $jollamodels   =       evdev+jolla(jolla)
   olpc          =       evdev+olpc(olpc)
   olpcm         =       evdev+olpc(olpcm)
+  pc104angle-z	=	evdev(pc104angle-z)
+  pc104wide-qu	=	evdev(pc104wide-qu)
+  pc104aw-zqu	=	evdev(pc104aw-zqu)
+  pc104awing	=	evdev(pc104awing)
+  pc104curl-z	=	evdev(pc104curl-z)
+  pc104caw-zqu	=	evdev(pc104caw-zqu)
+  pc104cawing	=	evdev(pc104cawing)
+  pc105angle	=	evdev(pc105angle)
+  pc105aw-sl	=	evdev(pc105aw-sl)
+  pc105curl		=	evdev(pc105curl)
+  pc105caw-sl	=	evdev(pc105caw-sl)
   *		=	evdev
 
 ! layout[1]	=	keycodes
@@ -109,7 +123,17 @@
   $qwertz       =       +aliases(qwertz)
   *             =       +aliases(qwerty)
 
+//! layout[1]		variant		=	keycodes
+//  $colemaklayouts	cmk_ed_ks	=	+aliases(colemak)
+//  $colemaklayouts	cmk_ed_us	=	+aliases(colemak)
+
+//! layout		variant		=	keycodes
+//  $colemaklayouts	cmk_ed_ks	=	+aliases(colemak)
+//  $colemaklayouts	cmk_ed_us	=	+aliases(colemak)
+
 ! option	=	keycodes
+  apple:badmap		=	+macintosh(badmap)
+  apple:goodmap		=	+macintosh(goodmap)
 
 ! model		layout	=	geometry
   thinkpad     us              =       thinkpad(us)
@@ -941,22 +965,32 @@
 ! layout	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle)
   *			misc:typo 	= +typo(base)
+  *			misc:extend 	= +extend(basic)
+  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh)
 
 ! layout[1]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):1
   *			misc:typo 	= +typo(base):1
+  *			misc:extend 	= +extend(basic):1
+  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):1
 
 ! layout[2]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):2
   *			misc:typo 	= +typo(base):2
+  *			misc:extend 	= +extend(basic):2
+//  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):2
 
 ! layout[3]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):3
   *			misc:typo 	= +typo(base):3
+  *			misc:extend 	= +extend(basic):3
+//  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):3
 
 ! layout[4]	option	=	symbols
   $threelevellayouts	grp:alts_toggle = +level3(ralt_switch_for_alts_toggle):4
   *			misc:typo 	= +typo(base):4
+  *			misc:extend 	= +extend(basic):4
+//  *			misc:cmk_curl_dh	= +colemak(cmk_ed_dh):4
 
 ! option	=	symbols
   grp:shift_toggle	=	+group(shifts_toggle)
@@ -996,6 +1030,7 @@
   grp:rwin_toggle	=	+group(rwin_toggle)
   grp:lshift_toggle	=	+group(lshift_toggle)
   grp:rshift_toggle	=	+group(rshift_toggle)
+  grp:lctrl_switch	=	+group(lctrl_switch)
   grp:rctrl_switch	=	+group(rctrl_switch)
   grp:lctrl_toggle	=	+group(lctrl_toggle)
   grp:rctrl_toggle	=	+group(rctrl_toggle)
@@ -1011,6 +1046,7 @@
   grp:rctrl_rshift_toggle	=	+group(rctrl_rshift_toggle)
   grp:ctrl_shift_toggle	=	+group(ctrl_shift_toggle)
   grp:ctrl_shift_toggle_bidir	=	+group(ctrl_shift_toggle_bidir)
+  grp:rctrl_switch_ctrls_toggle	=	+group(rctrl_switch_ctrls_toggle)
   grp:lalt_lshift_toggle	=	+group(lalt_lshift_toggle)
   grp:ralt_rshift_toggle	=	+group(ralt_rshift_toggle)
   grp:alt_shift_toggle	=	+group(alt_shift_toggle)
@@ -1032,7 +1068,6 @@
   caps:shiftlock	=	+capslock(shiftlock)
   caps:swapescape	=	+capslock(swapescape)
   caps:escape		=	+capslock(escape)
-  caps:escape_shifted_capslock	=	+capslock(escape_shifted_capslock)
   caps:backspace	=	+capslock(backspace)
   caps:super		=	+capslock(super)
   caps:hyper		=	+capslock(hyper)
@@ -1130,10 +1165,14 @@
   lv5:ralt_switch_lock            =       +level5(ralt_switch_lock)
   lv5:lwin_switch_lock            =       +level5(lwin_switch_lock)
   lv5:rwin_switch_lock            =       +level5(rwin_switch_lock)
+  lv5:caps_switch_lock            =       +level5(caps_switch_lock)
+  lv5:lctl_switch_lock            =       +level5(lctl_switch_lock)
   lv5:lsgt_switch_lock_cancel     =       +level5(lsgt_switch_lock_cancel)
   lv5:ralt_switch_lock_cancel     =       +level5(ralt_switch_lock_cancel)
   lv5:lwin_switch_lock_cancel     =       +level5(lwin_switch_lock_cancel)
   lv5:rwin_switch_lock_cancel     =       +level5(rwin_switch_lock_cancel)
+  lv5:caps_switch_lock_cancel     =       +level5(caps_switch_lock_cancel)
+  lv5:lctl_switch_lock_cancel     =       +level5(lctl_switch_lock_cancel)
   parens:swap_brackets   =   +parens(swap_brackets)
 
 

@@ -361,7 +361,7 @@ xkb_symbols "dvorak-alt-intl" {
     key <AC03> { [         e,       E,      eacute ] };
     key <AC04> { [         u,       U, ucircumflex ] };
     key <AC05> { [         i,       I, icircumflex ] };
-    key <AC10> { [         s,       S,      ssharp,            U1E9E ] };
+    key <AC10> { [         s,       S,      ssharp ] };
 
     key <AB01> { [ semicolon,   colon, acircumflex ] };
     key <AB02> { [         q,       Q,  odiaeresis,      dead_ogonek ] };
@@ -604,7 +604,7 @@ xkb_symbols "dvp" {
     key <AC07> { [ h,               H,              dead_acute                  ] };
     key <AC08> { [ t,               T,              thorn,           THORN      ] };
     key <AC09> { [ n,               N,              ntilde,          Ntilde     ] };
-    key <AC10> { [ s,               S,              ssharp,          U1E9E      ] };
+    key <AC10> { [ s,               S,              ssharp                      ] };
     key <AC11> { [ minus,           underscore,     hyphen,          endash     ], type[Group1] = "FOUR_LEVEL_ALPHABETIC" };
     key <BKSL> { [ backslash,       bar                                         ] };
 
@@ -774,7 +774,7 @@ xkb_symbols "colemak" {
 
     key <AC01> { [            a,            A,          aacute,           Aacute ] };
     key <AC02> { [            r,            R,      dead_grave,       asciitilde ] };
-    key <AC03> { [            s,            S,          ssharp,        0x1001e9e ] };
+    key <AC03> { [            s,            S,          ssharp,       asciitilde ] };
     key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
     key <AC05> { [            d,            D,  dead_diaeresis,       asciitilde ] };
     key <AC06> { [            h,            H,      dead_caron,       asciitilde ] };
@@ -801,6 +801,103 @@ xkb_symbols "colemak" {
 
     include "level3(ralt_switch)"
 };
+
+// --> OEystein Bech "DreymaR" Gadmar, 2012-01: Additions to xkb/symbols/us
+// See "DreymaR's Big Bag of Keyboard Tricks": http://forum.colemak.com/viewtopic.php?pid=9918
+
+// 'Colemak - edition DreymaR'/'Cmk[eD]' symbols for xkb on X.Org Server 7.x
+// 2006-01-01 Shai Coleman, http://colemak.com/
+// 2012-01-01 OEystein Bech "DreymaR" Gadmar: New shift levels 3-4.
+
+// DreymaR's design goals for tweaking the standard Colemak:
+// - Keeping level 1-2 of Colemak intact! This is what I think of as the Colemak layout per se.
+// - Dead keys easily accessible as unshifted AltGr+symbol keys; common ones in good positions.
+// - Added symbols/greek (similar to, e.g., the Mac ones) allowing common math/tech/etc typing.
+// - Added letters/quotes allowing many of the major latin scripts to be written correctly.
+// - The positions of added letters and symbols should as far as possible be easy to remember.
+// - A modular system allows flexible layout definition using different modifier keys and symbols
+//     * The symbol keys including the number row may be kept unchanged (national variant setups)
+//     * Due to the nature of the layout, this does not extend to the semicolon key!
+// - The brackets (lvl3-4) and the LSGT key hold the most common locale-specific letter glyphs.
+//     * See the colemak_template symbols file for more info on local Colemak[eD] variants.
+
+partial alphanumeric_keys
+xkb_symbols "cmk_ed_us" {
+    include "colemak(cmk_ed)"
+    name[Group1]= "English/Intl (Colemak, edition DreymaR)";
+};
+
+// Tarmak symbols for xkb on X.Org Server 7.x
+// 2012-01-01 OEystein Bech "DreymaR" Gadmar: Paving the way; 'Tarmak (transitional Colemak)'.
+// 2006-01-01 Shai Coleman, http://colemak.com/
+partial alphanumeric_keys
+xkb_symbols "tarmak1__e" {
+    include "colemak(tarmak1__e)"
+    name[Group1]= "English/Intl (Tarmak1__E - Colemak transitional)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "tarmak1c_e" {
+    include "colemak(tarmak1c_e)"
+    name[Group1]= "English/Intl (Tarmak1C_E - Colemak transit. w/ Curl-DH mod)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "tarmak2__et" {
+    include "colemak(tarmak2__et)"
+    name[Group1]= "English/Intl (Tarmak2__ET - Colemak transitional)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "tarmak2c_et" {
+    include "colemak(tarmak2c_et)"
+    name[Group1]= "English/Intl (Tarmak2C_ET - Colemak transit. w/ Curl-DH mod)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "tarmak3__etr" {
+    include "colemak(tarmak3__etr)"
+    name[Group1]= "English/Intl (Tarmak3__ETR - Colemak transitional)";
+};
+
+partial alphanumeric_keys
+xkb_symbols "tarmak4__etro" {
+    include "colemak(tarmak4__etro)"
+    name[Group1]= "English/Intl (Tarmak4__ETRO - Colemak transitional)";
+};
+
+//partial alphanumeric_keys
+//xkb_symbols "tarmak3__eto" {
+//    include "colemak(tarmak3__eto)"
+//    name[Group1]= "English/Intl (Tarmak3__ETO - Colemak transitional)";
+//};
+
+//partial alphanumeric_keys
+//xkb_symbols "tarmak4__etoi" {
+//    include "colemak(tarmak4__etoi)"
+//    name[Group1]= "English/Intl (Tarmak4__ETOI - Colemak transitional)";
+//};
+
+// Colemak-Curl(DH) symbols for xkb on X.Org Server 7.x
+// 2015-01-18 OEystein Bech "DreymaR" Gadmar
+// 2006-01-01 Shai Coleman, http://colemak.com/
+// This is the Curl-DH Colemak ergo mod by Stevep99 and DreymaR.
+partial alphanumeric_keys
+xkb_symbols "cmk_ed_dh" {
+    include "colemak(cmk_ed)"
+    include "colemak(cmk_ed_dh)"
+    name[Group1]= "English/Intl (Colemak[eD], Curl-DH ergo)";
+};
+
+// 2012-04-01 OEystein Bech "DreymaR" Gadmar: Mirrored Colemak[eD] for one-handed typing
+// NOTE: For use with the AWide-Slash keyboard mod only, as a second Group with a switch key.
+// 2006-01-01 Shai Coleman, http://colemak.com/
+partial alphanumeric_keys
+xkb_symbols "cmk_ed_mirror" {
+    include "colemak(cmk_ed_mirror)"
+    name[Group1]= "English/Intl (Colemak[eD], mirrored)";
+};
+// <-- DreymaR: Additions to xkb/symbols/us
 
 // I do NOT like dead-keys - the International keyboard as defined by Microsoft
 // does not fit my needs. Why use two keystrokes for all simple characters (eg '
@@ -1032,7 +1129,7 @@ xkb_symbols "olpc" {
    key <AD12> { [bracketright, braceright,  0x1000330,   0x1000330 ] }; // combining tilde below
 
    key <AC01>  { [         a,          A,          ae,               AE ] };
-   key <AC02>  { [         s,          S,      ssharp,        0x1001E9E ] }; // uppercase S sharp
+   key <AC02>  { [         s,          S,      ssharp,        0x1001E9C ] }; // uppercase S sharp
    key <AC03>  { [         d,          D,         eth,              ETH ] };
    key <AC04>  { [         f,          F,       thorn,            THORN ] };
    key <AC06>  { [         h,          H,    sterling,         sterling ] };
@@ -1095,7 +1192,7 @@ xkb_symbols "olpcm" {
    key <AD12> { [bracketright, braceright,  0x1000330,   0x1000330 ] }; // combining tilde below
 
    key <AC01>  { [         a,          A,          ae,               AE ] };
-   key <AC02>  { [         s,          S,      ssharp,        0x1001E9E ] }; // uppercase S sharp
+   key <AC02>  { [         s,          S,      ssharp,        0x1001E9C ] }; // uppercase S sharp
    key <AC03>  { [         d,          D,         eth,              ETH ] };
    key <AC04>  { [         f,          F,       thorn,            THORN ] };
    key <AC06>  { [         h,          H,    sterling,         sterling ] };
@@ -1804,85 +1901,4 @@ xkb_symbols "crd" {
 partial alphanumeric_keys
 	xkb_symbols "sun_type6" {
 	include "sun_vndr/us(sun_type6)"
-};
-
-// Implementation of the 3l keyboard layout
-// See https://github.com/jackrosenthal/threelayout for specification
-partial alphanumeric_keys modifier_keys
-xkb_symbols "3l" {
-    name[Group1] = "English (3l)";
-
-    key.type[Group1] = "ONE_LEVEL";
-    key <TAB> { [ Escape ] };
-    key <CAPS> { [ Tab ] };
-    key <AC11> { [ ISO_Level3_Shift ] }; // Sym Modifier
-    key <AB10> { [ ISO_Level5_Shift ] }; // Cur/Num Modifier
-
-    // Top row numbers - not part of spec, but given for convenience
-    key <AE01> { [ 1 ] };
-    key <AE02> { [ 2 ] };
-    key <AE03> { [ 3 ] };
-    key <AE04> { [ 4 ] };
-    key <AE05> { [ 5 ] };
-    key <AE06> { [ 6 ] };
-    key <AE07> { [ 7 ] };
-    key <AE08> { [ 8 ] };
-    key <AE09> { [ 9 ] };
-    key <AE10> { [ 0 ] };
-
-    // Main keys
-    // Order of mods (defined by EIGHT_LEVEL_SEMIALPHABETIC) is:
-    //           [ None,      Shift,     Sym,          Shift+Sym,      Num,       Shift+Num,  Sym+Num,  Shift+Sym+Num ]
-    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
-
-    // Second row
-    key <AD01> { [ q,         Q,         quotedbl,     Greek_omicron,  Prior,     Prior,      U21CD,    Greek_OMICRON ] };
-    key <AD02> { [ f,         F,         underscore,   Greek_phi,      BackSpace, BackSpace,  U21A4,    Greek_PHI ] };
-    key <AD03> { [ u,         U,         bracketleft,  Greek_upsilon,  Up,        Up,         U2191,    Greek_UPSILON ] };
-    key <AD04> { [ y,         Y,         bracketright, Greek_psi,      Delete,    Delete,     U21A6,    Greek_PSI ] };
-    key <AD05> { [ z,         Z,         asciicircum,  Greek_zeta,     Next,      Next,       U21CF,    Greek_ZETA ] };
-    key <AD06> { [ x,         X,         exclam,       Greek_xi,       NoSymbol,  NoSymbol,   U2260,    Greek_XI ] };
-    key <AD07> { [ k,         K,         less,         Greek_kappa,    1,         A,          U2A7D,    Greek_KAPPA ] };
-    key <AD08> { [ c,         C,         greater,      Greek_chi,      2,         B,          U2A7E,    Greek_CHI ] };
-    key <AD09> { [ w,         W,         equal,        Greek_omega,    3,         C,          U2261,    Greek_OMEGA ] };
-    key <AD10> { [ b,         B,         ampersand,    Greek_beta,     NoSymbol,  NoSymbol,   U2248,    Greek_BETA ] };
-
-    // Home row
-    key <AC01> { [ o,         O,         slash,        Greek_omega,    Home,      Home,       U21D0,    Greek_OMEGA ] };
-    key <AC02> { [ h,         H,         minus,        Greek_theta,    Left,      Left,       U2190,    Greek_THETA ] };
-    key <AC03> { [ e,         E,         braceleft,    Greek_epsilon,  Down,      Down,       U2193,    Greek_EPSILON ] };
-    key <AC04> { [ a,         A,         braceright,   Greek_alpha,    Right,     Right,      U2192,    Greek_ALPHA ] };
-    key <AC05> { [ i,         I,         asterisk,     Greek_iota,     End,       End,        U21D2,    Greek_IOTA ] };
-    key <AC06> { [ d,         D,         question,     Greek_delta,    period,    colon,      U2286,    Greek_DELTA ] };
-    key <AC07> { [ r,         R,         parenleft,    Greek_rho,      4,         D,          U2227,    Greek_RHO ] };
-    key <AC08> { [ t,         T,         parenright,   Greek_tau,      5,         E,          U2228,    Greek_TAU ] };
-    key <AC09> { [ n,         N,         apostrophe,   Greek_eta,      6,         F,          U2200,    Greek_ETA ] };
-    key <AC10> { [ s,         S,         colon,        Greek_sigma,    NoSymbol,  NoSymbol,   U2203,    Greek_SIGMA ] };
-
-    // Bottom row
-    key <AB01> { [ comma,     comma,     numbersign,   NoSymbol,       slash,     NoSymbol,   U21AE,    NoSymbol ] };
-    key <AB02> { [ m,         M,         dollar,       Greek_mu,       asterisk,  NoSymbol,   U2194,    Greek_MU ] };
-    key <AB03> { [ period,    period,    bar,          NoSymbol,       minus,     NoSymbol,   U21CE,    NoSymbol ] };
-    key <AB04> { [ j,         J,         asciitilde,   Greek_SIGMA,    plus,      NoSymbol,   U21D4,    NoSymbol ] };
-    key <AB05> { [ semicolon, semicolon, grave,        NoSymbol,       comma,     NoSymbol,   U2282,    NoSymbol ] };
-    key <AB06> { [ g,         G,         plus,         Greek_gamma,    0,         NoSymbol,   U2229,    Greek_GAMMA ] };
-    key <AB07> { [ l,         L,         percent,      Greek_lambda,   7,         parenleft,  U222A,    Greek_LAMBDA ] };
-    key <AB08> { [ p,         P,         backslash,    Greek_pi,       8,         parenright, U2208,    Greek_PI ] };
-    key <AB09> { [ v,         V,         at,           Greek_nu,       9,         NoSymbol,   U2209,    Greek_NU ] };
-
-    include "level5(modifier_mapping)"
-};
-
-// Chromebooks typically have the key which is normally in the caps
-// lock position mapped to keycode 133 (LWIN). For 3l, it is critical
-// that the key in this positon correspond to tab, so there is a
-// variant available for chromebook hardware.
-partial modifier_keys
-xkb_symbols "3l-cros" {
-    include "us(3l)"
-    name[Group1] = "English (3l, chromebook)";
-    key <LWIN> {
-        type[Group1] = "ONE_LEVEL",
-        symbols[Group1] = [ Tab ]
-    };
 };

@@ -12,7 +12,7 @@
     <model>
       <configItem>
         <name>pc102</name>
-        <description>Generic 102-key PC (intl.)</description>
+        <description>Generic 101-key PC (intl.)</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>
@@ -27,6 +27,83 @@
       <configItem>
         <name>pc105</name>
         <description>Generic 105-key PC (intl.)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104angle-z</name>
+        <description>Generic 104-key PC (Angle(Z)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104wide-qu</name>
+        <description>Generic 104-key PC (Wide(Quote)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104aw-zqu</name>
+        <description>Generic 104-key PC (Angle(Z)Wide(Quote)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104awing</name>
+        <description>Generic 104-key PC (AngleWing(Quote)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104curl-z</name>
+        <description>Generic 104-key PC (CurlAngle(Z)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104caw-zqu</name>
+        <description>Generic 104-key PC (CurlAngle(Z)Wide(Quote)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc104cawing</name>
+        <description>Generic 104-key PC (CurlAngleWing(Quote)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc105angle</name>
+        <description>Generic 105-key PC (intl.) (Angle_Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc105aw-sl</name>
+        <description>Generic 105-key PC (intl.) (AngleWide(/)Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc105curl</name>
+        <description>Generic 105-key PC (intl.) (CurlAngle_Ergo mod)</description>
+        <vendor>Generic</vendor>
+      </configItem>
+    </model>
+    <model>
+      <configItem>
+        <name>pc105caw-sl</name>
+        <description>Generic 105-key PC (intl.) (CurlAngleWide(/)Ergo mod)</description>
         <vendor>Generic</vendor>
       </configItem>
     </model>
@@ -1316,33 +1393,12 @@
        <vendor>SteelSeries</vendor>
      </configItem>
     </model>
-    <model>
-      <configItem>
-       <name>chromebook</name>
-       <description>Chromebook</description>
-       <vendor>Google</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-       <name>teck227</name>
-       <description>Truly Ergonomic Computer Keyboard Model 227 (Wide Alt keys)</description>
-       <vendor>Megawin Technology</vendor>
-     </configItem>
-    </model>
-    <model>
-      <configItem>
-       <name>teck229</name>
-       <description>Truly Ergonomic Computer Keyboard Model 229 (Standard sized Alt keys, additional Super and Menu key)</description>
-       <vendor>Megawin Technology</vendor>
-     </configItem>
-    </model>
   </modelList>
   <layoutList>
     <layout>
       <configItem>
         <name>us</name>
-        <!-- Keyboard indicator for English layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (US)</description>
         <languageList>
@@ -1353,7 +1409,7 @@
         <variant>
           <configItem>
             <name>chr</name>
-            <!-- Keyboard indicator for Cherokee layouts -->
+            
             <shortDescription>chr</shortDescription>
             <description>Cherokee</description>
             <languageList>
@@ -1383,6 +1439,60 @@
           <configItem>
             <name>colemak</name>
             <description>English (Colemak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>English (Colemak[eD] - edition DreymaR)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak1__e</name>
+            <description>English (Tarmak1 - Colemak[eD] transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak1c_e</name>
+            <description>English (Tarmak1C - Colemak[eD] Curl-DH transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak2__et</name>
+            <description>English (Tarmak2 - Colemak[eD] transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak2c_et</name>
+            <description>English (Tarmak2C - Colemak[eD] Curl-DH transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak3__etr</name>
+            <description>English (Tarmak3 - Colemak[eD] transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>tarmak4__etro</name>
+            <description>English (Tarmak4 - Colemak[eD] transitional)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_dh</name>
+            <description>English (Colemak[eD], Curl-DH ergo mod)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_mirror</name>
+            <description>English (Colemak[eD], mirrored)</description>
           </configItem>
         </variant>
         <variant>
@@ -1430,7 +1540,7 @@
         <variant>
           <configItem>
             <name>rus</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (US, phonetic)</description>
             <languageList>
@@ -1491,7 +1601,7 @@
     <layout>
       <configItem>
         <name>af</name>
-        <!-- Keyboard indicator for Afghani layouts -->
+        
         <shortDescription>fa</shortDescription>
         <description>Afghani</description>
       </configItem>
@@ -1499,7 +1609,7 @@
         <variant>
           <configItem>
             <name>ps</name>
-            <!-- Keyboard indicator for Pashto layouts -->
+            
             <shortDescription>ps</shortDescription>
             <description>Pashto</description>
             <languageList>
@@ -1510,7 +1620,7 @@
         <variant>
           <configItem>
             <name>uz</name>
-            <!-- Keyboard indicator for Uzbek layouts -->
+            
             <shortDescription>uz</shortDescription>
             <description>Uzbek (Afghanistan)</description>
             <languageList>
@@ -1521,7 +1631,7 @@
         <variant>
           <configItem>
             <name>olpc-ps</name>
-            <!-- Keyboard indicator for Pashto layouts -->
+            
             <shortDescription>ps</shortDescription>
             <description>Pashto (Afghanistan, OLPC)</description>
             <languageList>
@@ -1532,7 +1642,7 @@
         <variant>
           <configItem>
             <name>fa-olpc</name>
-            <!-- Keyboard indicator for Persian layouts -->
+            
             <shortDescription>fa</shortDescription>
             <description>Persian (Afghanistan, Dari OLPC)</description>
           </configItem>
@@ -1540,7 +1650,7 @@
         <variant>
           <configItem>
             <name>uz-olpc</name>
-            <!-- Keyboard indicator for Uzbek layouts -->
+            
             <shortDescription>uz</shortDescription>
             <description>Uzbek (Afghanistan, OLPC)</description>
             <languageList>
@@ -1553,7 +1663,7 @@
     <layout>
       <configItem>
         <name>ara</name>
-        <!-- Keyboard indicator for Arabic layouts -->
+        
         <shortDescription>ar</shortDescription>
         <description>Arabic</description>
         <countryList>
@@ -1635,7 +1745,7 @@
     <layout>
       <configItem>
         <name>al</name>
-        <!-- Keyboard indicator for Albanian layouts -->
+        
         <shortDescription>sq</shortDescription>
         <description>Albanian</description>
         <languageList>
@@ -1649,12 +1759,24 @@
             <description>Albanian (Plisi)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Albanian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Albanian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>am</name>
-        <!-- Keyboard indicator for Armenian layouts -->
+        
         <shortDescription>hy</shortDescription>
         <description>Armenian</description>
         <languageList>
@@ -1697,7 +1819,7 @@
     <layout>
       <configItem>
         <name>at</name>
-        <!-- Keyboard indicator for German layouts -->
+        
         <shortDescription>de</shortDescription>
         <description>German (Austria)</description>
         <languageList>
@@ -1723,12 +1845,24 @@
             <description>German (Austria, Macintosh)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>German (Austria, Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>German (Austria, Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>au</name>
-        <!-- Keyboard indicator for Australian layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (Australian)</description>
         <languageList>
@@ -1739,7 +1873,7 @@
     <layout>
       <configItem>
         <name>az</name>
-        <!-- Keyboard indicator for Azerbaijani layouts -->
+        
         <shortDescription>az</shortDescription>
         <description>Azerbaijani</description>
         <languageList>
@@ -1758,7 +1892,7 @@
     <layout>
       <configItem>
         <name>by</name>
-        <!-- Keyboard indicator for Belarusian layouts -->
+        
         <shortDescription>by</shortDescription>
         <description>Belarusian</description>
         <languageList>
@@ -1783,7 +1917,7 @@
     <layout>
       <configItem>
         <name>be</name>
-        <!-- Keyboard indicator for Belgian layouts -->
+        
         <shortDescription>be</shortDescription>
         <description>Belgian</description>
         <languageList>
@@ -1835,17 +1969,29 @@
             <description>Belgian (Wang 724 AZERTY)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Belgian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Belgian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>bd</name>
-        <!-- Keyboard indicator for Bangla layouts -->
+        
         <shortDescription>bn</shortDescription>
         <description>Bangla</description>
         <languageList>
           <iso639Id>ben</iso639Id>
-          <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+          
           <iso639Id>sat</iso639Id>
         </languageList>
       </configItem>
@@ -1861,7 +2007,7 @@
     <layout>
       <configItem>
         <name>in</name>
-        <!-- Keyboard indicator for Indian layouts -->
+        
         <shortDescription>in</shortDescription>
         <description>Indian</description>
       </configItem>
@@ -1869,12 +2015,12 @@
         <variant>
           <configItem>
             <name>ben</name>
-            <!-- Keyboard indicator for Bangla layouts -->
+            
             <shortDescription>bn</shortDescription>
             <description>Bangla (India)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1882,12 +2028,12 @@
         <variant>
           <configItem>
             <name>ben_probhat</name>
-            <!-- Keyboard indicator for Bangla layouts -->
+            
             <shortDescription>bn</shortDescription>
             <description>Bangla (India, Probhat)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1898,7 +2044,7 @@
             <description>Bangla (India, Baishakhi)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1909,7 +2055,7 @@
             <description>Bangla (India, Bornona)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1920,7 +2066,7 @@
             <description>Bangla (India, Uni Gitanjali)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1931,7 +2077,7 @@
             <description>Bangla (India, Baishakhi Inscript)</description>
             <languageList>
               <iso639Id>ben</iso639Id>
-              <!-- sat-Beng: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -1948,7 +2094,7 @@
         <variant>
           <configItem>
             <name>guj</name>
-            <!-- Keyboard indicator for Gujarati layouts -->
+            
             <shortDescription>gu</shortDescription>
             <description>Gujarati</description>
             <languageList>
@@ -1959,7 +2105,7 @@
         <variant>
           <configItem>
             <name>guru</name>
-            <!-- Keyboard indicator for Punjabi layouts -->
+            
             <shortDescription>pa</shortDescription>
             <description>Punjabi (Gurmukhi)</description>
             <languageList>
@@ -1970,7 +2116,7 @@
         <variant>
           <configItem>
             <name>jhelum</name>
-            <!-- Keyboard indicator for Punjabi layouts -->
+            
             <shortDescription>pa</shortDescription>
             <description>Punjabi (Gurmukhi Jhelum)</description>
             <languageList>
@@ -1981,7 +2127,7 @@
         <variant>
           <configItem>
             <name>kan</name>
-            <!-- Keyboard indicator for Kannada layouts -->
+            
             <shortDescription>kn</shortDescription>
             <description>Kannada</description>
             <languageList>
@@ -1992,18 +2138,7 @@
         <variant>
           <configItem>
             <name>kan-kagapa</name>
-            <!-- Keyboard indicator for Kannada layouts -->
-            <shortDescription>kn</shortDescription>
-            <description>Kannada (KaGaPa phonetic)</description>
-            <languageList>
-              <iso639Id>kan</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>kan-kagapa</name>
-            <!-- Keyboard indicator for Kannada layouts -->
+            
             <shortDescription>kn</shortDescription>
             <description>Kannada (KaGaPa phonetic)</description>
             <languageList>
@@ -2014,7 +2149,7 @@
         <variant>
           <configItem>
             <name>mal</name>
-            <!-- Keyboard indicator for Malayalam layouts -->
+            
             <shortDescription>ml</shortDescription>
             <description>Malayalam</description>
             <languageList>
@@ -2025,7 +2160,7 @@
         <variant>
           <configItem>
             <name>mal_lalitha</name>
-            <!-- Keyboard indicator for Malayalam layouts -->
+            
             <shortDescription>ml</shortDescription>
             <description>Malayalam (Lalitha)</description>
             <languageList>
@@ -2036,7 +2171,7 @@
         <variant>
           <configItem>
             <name>mal_enhanced</name>
-            <!-- Keyboard indicator for Malayalam layouts -->
+            
             <shortDescription>ml</shortDescription>
             <description>Malayalam (enhanced Inscript, with rupee)</description>
             <languageList>
@@ -2047,12 +2182,12 @@
          <variant>
            <configItem>
             <name>ori</name>
-            <!-- Keyboard indicator for Oriya layouts -->
+            
             <shortDescription>or</shortDescription>
             <description>Oriya</description>
             <languageList>
               <iso639Id>ori</iso639Id>
-              <!-- sat-Orya: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
@@ -2060,21 +2195,21 @@
         <variant>
            <configItem>
             <name>olck</name>
-            <!-- Keyboard indicator for Ol Chiki layouts -->
+            
             <shortDescription>sat</shortDescription>
             <description>Ol Chiki</description>
             <languageList>
-              <!-- sat-Olck: http://www.ethnologue.com/language/sat -->
+              
               <iso639Id>sat</iso639Id>
             </languageList>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            <name>tam_unicode</name>
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (TamilNet '99)</description>
+            <description>Tamil (Unicode)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -2082,10 +2217,10 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_with_tam_nums</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            <name>tam_keyboard_with_numerals</name>
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (TamilNet '99 with Tamil numerals)</description>
+            <description>Tamil (keyboard with numerals)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -2093,10 +2228,10 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_TAB</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            <name>tam_TAB</name>
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (TamilNet '99, TAB encoding)</description>
+            <description>Tamil (TAB typewriter)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -2104,10 +2239,10 @@
         </variant>
         <variant>
           <configItem>
-            <name>tam_tamilnet_TSCII</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            <name>tam_TSCII</name>
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (TamilNet '99, TSCII encoding)</description>
+            <description>Tamil (TSCII typewriter)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -2116,9 +2251,9 @@
         <variant>
           <configItem>
             <name>tam</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (Inscript)</description>
+            <description>Tamil</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -2127,7 +2262,7 @@
         <variant>
           <configItem>
             <name>tel</name>
-            <!-- Keyboard indicator for Telugu layouts -->
+            
             <shortDescription>te</shortDescription>
             <description>Telugu</description>
             <languageList>
@@ -2138,7 +2273,7 @@
         <variant>
           <configItem>
             <name>tel-kagapa</name>
-            <!-- Keyboard indicator for Telugu layouts -->
+            
             <shortDescription>te</shortDescription>
             <description>Telugu (KaGaPa phonetic)</description>
             <languageList>
@@ -2149,7 +2284,7 @@
         <variant>
           <configItem>
             <name>tel-sarala</name>
-            <!-- Keyboard indicator for Telugu layouts -->
+            
             <shortDescription>te</shortDescription>
             <description>Telugu (Sarala)</description>
             <languageList>
@@ -2159,19 +2294,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>tel-kagapa</name>
-            <!-- Keyboard indicator for Telugu layouts -->
-            <shortDescription>te</shortDescription>
-            <description>Telugu (KaGaPa phonetic)</description>
-            <languageList>
-              <iso639Id>tel</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>urd-phonetic</name>
-            <!-- Keyboard indicator for Urdu layouts -->
+            
             <shortDescription>ur</shortDescription>
             <description>Urdu (phonetic)</description>
             <languageList>
@@ -2182,7 +2306,7 @@
         <variant>
           <configItem>
             <name>urd-phonetic3</name>
-            <!-- Keyboard indicator for Urdu layouts -->
+            
             <shortDescription>ur</shortDescription>
             <description>Urdu (alt. phonetic)</description>
             <languageList>
@@ -2193,7 +2317,7 @@
         <variant>
           <configItem>
             <name>urd-winkeys</name>
-            <!-- Keyboard indicator for Urdu layouts -->
+            
             <shortDescription>ur</shortDescription>
             <description>Urdu (Win keys)</description>
             <languageList>
@@ -2204,7 +2328,7 @@
         <variant>
           <configItem>
             <name>bolnagri</name>
-            <!-- Keyboard indicator for Hindi layouts -->
+            
             <shortDescription>hi</shortDescription>
             <description>Hindi (Bolnagri)</description>
             <languageList>
@@ -2215,7 +2339,7 @@
         <variant>
           <configItem>
             <name>hin-wx</name>
-            <!-- Keyboard indicator for Hindi layouts -->
+            
             <shortDescription>hi</shortDescription>
             <description>Hindi (Wx)</description>
             <languageList>
@@ -2226,7 +2350,7 @@
         <variant>
           <configItem>
             <name>hin-kagapa</name>
-            <!-- Keyboard indicator for Hindi layouts -->
+            
             <shortDescription>hi</shortDescription>
             <description>Hindi (KaGaPa phonetic)</description>
             <languageList>
@@ -2237,7 +2361,7 @@
         <variant>
           <configItem>
             <name>san-kagapa</name>
-            <!-- Keyboard indicator for Sanskrit layouts -->
+            
             <shortDescription>sa</shortDescription>
             <description>Sanskrit (KaGaPa phonetic)</description>
             <languageList>
@@ -2248,7 +2372,7 @@
         <variant>
           <configItem>
             <name>mar-kagapa</name>
-            <!-- Keyboard indicator for Marathi layouts -->
+            
             <shortDescription>mr</shortDescription>
             <description>Marathi (KaGaPa phonetic)</description>
             <languageList>
@@ -2259,7 +2383,7 @@
         <variant>
           <configItem>
             <name>eng</name>
-            <!-- Keyboard indicator for English layouts -->
+            
             <shortDescription>en</shortDescription>
             <description>English (India, with rupee)</description>
             <languageList>
@@ -2272,7 +2396,7 @@
     <layout>
       <configItem>
         <name>ba</name>
-        <!-- Keyboard indicator for Bosnian layouts -->
+        
         <shortDescription>bs</shortDescription>
         <description>Bosnian</description>
         <languageList>
@@ -2304,12 +2428,24 @@
             <description>Bosnian (US, with Bosnian letters)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Bosnian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Bosnian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>br</name>
-        <!-- Keyboard indicator for Portuguese layouts -->
+        
         <shortDescription>pt</shortDescription>
         <description>Portuguese (Brazil)</description>
         <languageList>
@@ -2352,6 +2488,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Portuguese (Brazil, Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Portuguese (Brazil, Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>thinkpad</name>
             <description>Portuguese (Brazil, IBM/Lenovo ThinkPad)</description>
           </configItem>
@@ -2361,7 +2509,7 @@
     <layout>
       <configItem>
         <name>bg</name>
-        <!-- Keyboard indicator for Bulgarian layouts -->
+        
         <shortDescription>bg</shortDescription>
         <description>Bulgarian</description>
         <languageList>
@@ -2379,6 +2527,12 @@
           <configItem>
             <name>bas_phonetic</name>
             <description>Bulgarian (new phonetic)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>Bulgarian (Colemak, phonetic S-Slavic)</description>
           </configItem>
         </variant>
       </variantList>
@@ -2415,7 +2569,7 @@
     <layout>
       <configItem>
         <name>ma</name>
-        <!-- Keyboard indicator for Arabic layouts -->
+        
         <shortDescription>ar</shortDescription>
         <description>Arabic (Morocco)</description>
       </configItem>
@@ -2423,7 +2577,7 @@
         <variant>
           <configItem>
             <name>french</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Morocco)</description>
             <languageList>
@@ -2434,7 +2588,7 @@
         <variant>
           <configItem>
             <name>tifinagh</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh)</description>
             <languageList>
@@ -2445,7 +2599,7 @@
         <variant>
           <configItem>
             <name>tifinagh-alt</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh alt.)</description>
             <languageList>
@@ -2456,7 +2610,7 @@
         <variant>
           <configItem>
             <name>tifinagh-alt-phonetic</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh alt. phonetic)</description>
             <languageList>
@@ -2467,7 +2621,7 @@
         <variant>
           <configItem>
             <name>tifinagh-extended</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh extended)</description>
             <languageList>
@@ -2478,7 +2632,7 @@
         <variant>
           <configItem>
             <name>tifinagh-phonetic</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh phonetic)</description>
             <languageList>
@@ -2489,7 +2643,7 @@
         <variant>
           <configItem>
             <name>tifinagh-extended-phonetic</name>
-            <!-- Keyboard indicator for Berber layouts -->
+            
             <shortDescription>ber</shortDescription>
             <description>Berber (Morocco, Tifinagh extended phonetic)</description>
             <languageList>
@@ -2502,7 +2656,7 @@
     <layout>
       <configItem>
         <name>cm</name>
-        <!-- Keyboard indicator for Cameroon layouts -->
+        
         <shortDescription>cm</shortDescription>
         <description>English (Cameroon)</description>
         <languageList>
@@ -2610,27 +2764,19 @@
     <layout>
       <configItem>
         <name>mm</name>
-        <!-- Keyboard indicator for Burmese layouts -->
+        
         <shortDescription>my</shortDescription>
         <description>Burmese</description>
         <languageList>
           <iso639Id>mya</iso639Id>
         </languageList>
       </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>zawgyi</name>
-            <shortDescription>zg</shortDescription>
-            <description>Burmese Zawgyi</description>
-          </configItem>
-        </variant>
-      </variantList>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
         <name>ca</name>
-        <!-- Keyboard indicator for French layouts -->
+        
         <shortDescription>fr</shortDescription>
         <description>French (Canada)</description>
         <languageList>
@@ -2641,7 +2787,7 @@
         <variant>
           <configItem>
             <name>fr-dvorak</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Canada, Dvorak)</description>
           </configItem>
@@ -2649,7 +2795,7 @@
         <variant>
           <configItem>
             <name>fr-legacy</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Canada, legacy)</description>
           </configItem>
@@ -2674,8 +2820,20 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Canadian multilingual (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Canadian multilingual (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>ike</name>
-            <!-- Keyboard indicator for Inuktikut layouts -->
+            
             <shortDescription>ike</shortDescription>
             <description>Inuktitut</description>
             <languageList>
@@ -2686,7 +2844,7 @@
         <variant>
           <configItem>
             <name>eng</name>
-            <!-- Keyboard indicator for English layouts -->
+            
             <shortDescription>en</shortDescription>
             <description>English (Canada)</description>
             <languageList>
@@ -2699,7 +2857,7 @@
     <layout>
       <configItem>
         <name>cd</name>
-        <!-- Keyboard indicator for French layouts -->
+        
         <shortDescription>fr</shortDescription>
         <description>French (Democratic Republic of the Congo)</description>
         <languageList>
@@ -2711,7 +2869,7 @@
     <layout>
       <configItem>
         <name>cn</name>
-        <!-- Keyboard indicator for Chinese layouts -->
+        
         <shortDescription>zh</shortDescription>
         <description>Chinese</description>
         <languageList>
@@ -2747,21 +2905,12 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>altgr-pinyin</name>
-            <description>Hanyu Pinyin (altgr)</description>
-            <languageList>
-              <iso639Id>chi</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>hr</name>
-        <!-- Keyboard indicator for Croatian layouts -->
+        
         <shortDescription>hr</shortDescription>
         <description>Croatian</description>
         <languageList>
@@ -2793,12 +2942,24 @@
             <description>Croatian (US, with Croatian letters)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Croatian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Croatian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>cz</name>
-        <!-- Keyboard indicator for Chech layouts -->
+        
         <shortDescription>cs</shortDescription>
         <description>Czech</description>
         <languageList>
@@ -2838,8 +2999,20 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Czech (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Czech (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>rus</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Czech, phonetic)</description>
             <languageList>
@@ -2852,7 +3025,7 @@
     <layout>
       <configItem>
         <name>dk</name>
-        <!-- Keyboard indicator for Danish layouts -->
+        
         <shortDescription>da</shortDescription>
         <description>Danish</description>
         <languageList>
@@ -2890,12 +3063,24 @@
             <description>Danish (Dvorak)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Danish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Danish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>nl</name>
-        <!-- Keyboard indicator for Dutch layouts -->
+        
         <shortDescription>nl</shortDescription>
         <description>Dutch</description>
         <languageList>
@@ -2921,12 +3106,24 @@
             <description>Dutch (standard)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Dutch (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Dutch (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>bt</name>
-        <!-- Keyboard indicator for Dzongkha layouts -->
+        
         <shortDescription>dz</shortDescription>
         <description>Dzongkha</description>
         <languageList>
@@ -2937,7 +3134,7 @@
     <layout>
       <configItem>
         <name>ee</name>
-        <!-- Keyboard indicator for Estonian layouts -->
+        
         <shortDescription>et</shortDescription>
         <description>Estonian</description>
         <languageList>
@@ -2968,7 +3165,7 @@
     <layout>
       <configItem>
         <name>ir</name>
-        <!-- Keyboard indicator for Persian layouts -->
+        
         <shortDescription>fa</shortDescription>
         <description>Persian</description>
         <languageList>
@@ -2985,7 +3182,7 @@
         <variant>
           <configItem>
             <name>ku</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iran, Latin Q)</description>
             <languageList>
@@ -2996,7 +3193,7 @@
         <variant>
           <configItem>
             <name>ku_f</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iran, F)</description>
             <languageList>
@@ -3007,7 +3204,7 @@
         <variant>
           <configItem>
             <name>ku_alt</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iran, Latin Alt-Q)</description>
             <languageList>
@@ -3018,7 +3215,7 @@
         <variant>
           <configItem>
             <name>ku_ara</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iran, Arabic-Latin)</description>
             <languageList>
@@ -3031,7 +3228,7 @@
     <layout>
       <configItem>
         <name>iq</name>
-        <!-- Keyboard indicator for Iraqi layouts -->
+        
         <shortDescription>ar</shortDescription>
         <description>Iraqi</description>
         <languageList>
@@ -3043,7 +3240,7 @@
         <variant>
           <configItem>
             <name>ku</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iraq, Latin Q)</description>
             <languageList>
@@ -3054,7 +3251,7 @@
         <variant>
           <configItem>
             <name>ku_f</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iraq, F)</description>
             <languageList>
@@ -3065,7 +3262,7 @@
         <variant>
           <configItem>
             <name>ku_alt</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iraq, Latin Alt-Q)</description>
             <languageList>
@@ -3076,7 +3273,7 @@
         <variant>
           <configItem>
             <name>ku_ara</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Iraq, Arabic-Latin)</description>
             <languageList>
@@ -3089,7 +3286,7 @@
     <layout>
       <configItem>
         <name>fo</name>
-        <!-- Keyboard indicator for Faroese layouts -->
+        
         <shortDescription>fo</shortDescription>
         <description>Faroese</description>
         <languageList>
@@ -3108,7 +3305,7 @@
     <layout>
       <configItem>
         <name>fi</name>
-        <!-- Keyboard indicator for Finnish layouts -->
+        
         <shortDescription>fi</shortDescription>
         <description>Finnish</description>
         <languageList>
@@ -3149,12 +3346,24 @@
             <description>Finnish (Macintosh)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Finnish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Finnish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>fr</name>
-        <!-- Keyboard indicator for French layouts -->
+        
         <shortDescription>fr</shortDescription>
         <description>French</description>
         <languageList>
@@ -3236,6 +3445,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>French (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>French (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>mac</name>
             <description>French (Macintosh)</description>
           </configItem>
@@ -3270,18 +3491,12 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>us</name>
-            <description>French (US, with French letters)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>gh</name>
-        <!-- Keyboard indicator for English layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (Ghana)</description>
         <languageList>
@@ -3298,7 +3513,7 @@
         <variant>
           <configItem>
             <name>akan</name>
-            <!-- Keyboard indicator for Akan layouts -->
+            
             <shortDescription>ak</shortDescription>
             <description>Akan</description>
             <languageList>
@@ -3309,7 +3524,7 @@
         <variant>
           <configItem>
             <name>ewe</name>
-            <!-- Keyboard indicator for Ewe layouts -->
+            
             <shortDescription>ee</shortDescription>
             <description>Ewe</description>
             <languageList>
@@ -3320,7 +3535,7 @@
         <variant>
           <configItem>
             <name>fula</name>
-            <!-- Keyboard indicator for Fula layouts -->
+            
             <shortDescription>ff</shortDescription>
             <description>Fula</description>
             <languageList>
@@ -3331,7 +3546,7 @@
         <variant>
           <configItem>
             <name>ga</name>
-            <!-- Keyboard indicator for Ga layouts -->
+            
             <shortDescription>gaa</shortDescription>
             <description>Ga</description>
             <languageList>
@@ -3342,7 +3557,7 @@
         <variant>
           <configItem>
             <name>hausa</name>
-            <!-- Keyboard indicator for Hausa layouts -->
+            
             <shortDescription>ha</shortDescription>
             <description>Hausa (Ghana)</description>
             <languageList>
@@ -3353,7 +3568,7 @@
         <variant>
           <configItem>
             <name>avn</name>
-            <!-- Keyboard indicator for Avatime layouts -->
+            
             <shortDescription>avn</shortDescription>
             <description>Avatime</description>
             <languageList>
@@ -3372,7 +3587,7 @@
     <layout>
       <configItem>
         <name>gn</name>
-        <!-- Keyboard indicator for French layouts -->
+        
         <shortDescription>fr</shortDescription>
         <description>French (Guinea)</description>
         <languageList>
@@ -3384,7 +3599,7 @@
     <layout>
       <configItem>
         <name>ge</name>
-        <!-- Keyboard indicator for Georgian layouts -->
+        
         <shortDescription>ka</shortDescription>
         <description>Georgian</description>
         <languageList>
@@ -3407,7 +3622,7 @@
         <variant>
           <configItem>
             <name>ru</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Georgia)</description>
             <languageList>
@@ -3429,7 +3644,7 @@
     <layout>
       <configItem>
         <name>de</name>
-        <!-- Keyboard indicator for German layouts -->
+        
         <shortDescription>de</shortDescription>
         <description>German</description>
         <languageList>
@@ -3483,6 +3698,18 @@
           <configItem>
             <name>dvorak</name>
             <description>German (Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>German (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>German (Colemak[eD], unified symbols)</description>
           </configItem>
         </variant>
         <variant>
@@ -3545,7 +3772,7 @@
         <variant>
           <configItem>
             <name>ru</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Germany, phonetic)</description>
             <languageList>
@@ -3564,7 +3791,7 @@
     <layout>
       <configItem>
         <name>gr</name>
-        <!-- Keyboard indicator for Greek layouts -->
+        
         <shortDescription>gr</shortDescription>
         <description>Greek</description>
         <languageList>
@@ -3596,12 +3823,18 @@
             <description>Greek (polytonic)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>Greek (Colemak, phonetic)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>hu</name>
-        <!-- Keyboard indicator for Hungarian layouts -->
+        
         <shortDescription>hu</shortDescription>
         <description>Hungarian</description>
         <languageList>
@@ -3625,6 +3858,18 @@
           <configItem>
             <name>qwerty</name>
             <description>Hungarian (QWERTY)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Hungarian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Hungarian (Colemak[eD], unified symbols)</description>
           </configItem>
         </variant>
         <variant>
@@ -3728,7 +3973,7 @@
     <layout>
       <configItem>
         <name>is</name>
-        <!-- Keyboard indicator for Icelandic layouts -->
+        
         <shortDescription>is</shortDescription>
         <description>Icelandic</description>
         <languageList>
@@ -3766,12 +4011,24 @@
             <description>Icelandic (Dvorak)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Icelandic (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Icelandic (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>il</name>
-        <!-- Keyboard indicator for Hebrew layouts -->
+        
         <shortDescription>he</shortDescription>
         <description>Hebrew</description>
         <languageList>
@@ -3797,12 +4054,18 @@
             <description>Hebrew (Biblical, Tiro)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>colemak</name>
+            <description>Hebrew (Colemak, phonetic)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>it</name>
-        <!-- Keyboard indicator for Italian layouts -->
+        
         <shortDescription>it</shortDescription>
         <description>Italian</description>
         <languageList>
@@ -3845,6 +4108,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Italian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Italian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>ibm</name>
             <description>Italian (IBM 142)</description>
           </configItem>
@@ -3875,21 +4150,12 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>fur</name>
-            <description>Friulian (Italy)</description>
-            <languageList>
-              <iso639Id>fur</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>jp</name>
-        <!-- Keyboard indicator for Japaneses -->
+        
         <shortDescription>ja</shortDescription>
         <description>Japanese</description>
         <languageList>
@@ -3932,7 +4198,7 @@
     <layout>
       <configItem>
         <name>kg</name>
-        <!-- Keyboard indicator for Kyrgyz layouts -->
+        
         <shortDescription>ki</shortDescription>
         <description>Kyrgyz</description>
         <languageList>
@@ -3951,7 +4217,7 @@
     <layout>
       <configItem>
         <name>kh</name>
-        <!-- Keyboard indicator for Khmer layouts -->
+        
         <shortDescription>km</shortDescription>
         <description>Khmer (Cambodia)</description>
         <languageList>
@@ -3963,7 +4229,7 @@
     <layout>
       <configItem>
         <name>kz</name>
-        <!-- Keyboard indicator for Kazakh layouts -->
+        
         <shortDescription>kk</shortDescription>
         <description>Kazakh</description>
         <languageList>
@@ -3974,7 +4240,7 @@
         <variant>
           <configItem>
             <name>ruskaz</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Kazakhstan, with Kazakh)</description>
             <languageList>
@@ -4002,21 +4268,12 @@
             </languageList>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>latin</name>
-            <description>Kazakh (Latin)</description>
-            <languageList>
-              <iso639Id>kaz</iso639Id>
-            </languageList>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>la</name>
-        <!-- Keyboard indicator for Lao layouts -->
+        
         <shortDescription>lo</shortDescription>
         <description>Lao</description>
         <languageList>
@@ -4038,7 +4295,7 @@
     <layout>
       <configItem>
         <name>latam</name>
-        <!-- Keyboard indicator for Spanish layouts -->
+        
         <shortDescription>es</shortDescription>
         <description>Spanish (Latin American)</description>
         <countryList>
@@ -4095,14 +4352,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>colemak</name>
-            <description>Spanish (Latin American, Colemak)</description>
+            <name>cmk_ed_ks</name>
+            <description>Spanish (Latin American, Colemak[eD], keep local symbols)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
-            <name>colemak-gaming</name>
-            <description>Spanish (Latin American, Colemak for gaming)</description>
+            <name>cmk_ed_us</name>
+            <description>Spanish (Latin American, Colemak[eD], unified symbols)</description>
           </configItem>
         </variant>
       </variantList>
@@ -4110,7 +4367,7 @@
     <layout>
       <configItem>
         <name>lt</name>
-        <!-- Keyboard indicator for Lithuanian layouts -->
+        
         <shortDescription>lt</shortDescription>
         <description>Lithuanian</description>
         <languageList>
@@ -4153,7 +4410,7 @@
     <layout>
       <configItem>
         <name>lv</name>
-        <!-- Keyboard indicator for Latvian layouts -->
+        
         <shortDescription>lv</shortDescription>
         <description>Latvian</description>
         <languageList>
@@ -4202,7 +4459,7 @@
     <layout>
       <configItem>
         <name>mao</name>
-        <!-- Keyboard indicator for Maori layouts -->
+        
         <shortDescription>mi</shortDescription>
         <description>Maori</description>
         <languageList>
@@ -4214,7 +4471,7 @@
     <layout>
       <configItem>
         <name>me</name>
-        <!-- Keyboard indicator for Montenegrin layouts -->
+        
         <shortDescription>sr</shortDescription>
         <description>Montenegrin</description>
         <languageList>
@@ -4269,7 +4526,7 @@
     <layout>
       <configItem>
         <name>mk</name>
-        <!-- Keyboard indicator for Macedonian layouts -->
+        
         <shortDescription>mk</shortDescription>
         <description>Macedonian</description>
         <languageList>
@@ -4288,7 +4545,7 @@
     <layout>
       <configItem>
         <name>mt</name>
-        <!-- Keyboard indicator for Maltese layouts -->
+        
         <shortDescription>mt</shortDescription>
         <description>Maltese</description>
         <languageList>
@@ -4302,24 +4559,12 @@
             <description>Maltese (with US layout)</description>
           </configItem>
         </variant>
-        <variant>
-          <configItem>
-            <name>alt-us</name>
-            <description>Maltese (US layout with AltGr overrides)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>alt-gb</name>
-            <description>Maltese (UK layout with AltGr overrides)</description>
-          </configItem>
-        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>mn</name>
-        <!-- Keyboard indicator for Mongolian layouts -->
+        
         <shortDescription>mn</shortDescription>
         <description>Mongolian</description>
         <languageList>
@@ -4331,7 +4576,7 @@
     <layout>
       <configItem>
         <name>no</name>
-        <!-- Keyboard indicator for Norwegian layouts -->
+        
         <shortDescription>no</shortDescription>
         <description>Norwegian</description>
         <languageList>
@@ -4357,6 +4602,18 @@
           <configItem>
             <name>dvorak</name>
             <description>Norwegian (Dvorak)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Norwegian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Norwegian (Colemak[eD], unified symbols)</description>
           </configItem>
         </variant>
         <variant>
@@ -4400,7 +4657,7 @@
     <layout>
       <configItem>
         <name>pl</name>
-        <!-- Keyboard indicator for Polish layouts -->
+        
         <shortDescription>pl</shortDescription>
         <description>Polish</description>
         <languageList>
@@ -4440,6 +4697,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Polish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Polish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>csb</name>
             <description>Kashubian</description>
             <languageList>
@@ -4459,7 +4728,7 @@
         <variant>
           <configItem>
             <name>ru_phonetic_dvorak</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Poland, phonetic Dvorak)</description>
             <languageList>
@@ -4478,7 +4747,7 @@
     <layout>
       <configItem>
         <name>pt</name>
-        <!-- Keyboard indicator for Portuguese layouts -->
+        
         <shortDescription>pt</shortDescription>
         <description>Portuguese</description>
         <languageList>
@@ -4518,6 +4787,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Portuguese (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Portuguese (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>nativo</name>
             <description>Portuguese (Nativo)</description>
           </configItem>
@@ -4542,7 +4823,7 @@
     <layout>
       <configItem>
         <name>ro</name>
-        <!-- Keyboard indicator for Romanian layouts -->
+        
         <shortDescription>ro</shortDescription>
         <description>Romanian</description>
         <languageList>
@@ -4574,12 +4855,24 @@
             <description>Romanian (Win keys)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Romanian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Romanian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>ru</name>
-        <!-- Keyboard indicator for Russian layouts -->
+        
         <shortDescription>ru</shortDescription>
         <description>Russian</description>
         <languageList>
@@ -4601,8 +4894,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>phonetic_yazherty</name>
-            <description>Russian (phonetic yazherty)</description>
+            <name>colemak</name>
+            <description>Russian (Colemak, phonetic E-Slavic)</description>
           </configItem>
         </variant>
         <variant>
@@ -4767,7 +5060,7 @@
     <layout>
       <configItem>
         <name>rs</name>
-        <!-- Keyboard indicator for Serbian layouts -->
+        
         <shortDescription>sr</shortDescription>
         <description>Serbian</description>
         <languageList>
@@ -4819,6 +5112,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Serbian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Serbian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>rue</name>
             <description>Pannonian Rusyn</description>
             <languageList>
@@ -4831,7 +5136,7 @@
     <layout>
       <configItem>
         <name>si</name>
-        <!-- Keyboard indicator for Slovenian layouts -->
+        
         <shortDescription>sl</shortDescription>
         <description>Slovenian</description>
         <languageList>
@@ -4851,12 +5156,24 @@
             <description>Slovenian (US, with Slovenian letters)</description>
           </configItem>
         </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Slovenian (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Slovenian (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
       </variantList>
     </layout>
     <layout>
       <configItem>
         <name>sk</name>
-        <!-- Keyboard indicator for Slovak layouts -->
+        
         <shortDescription>sk</shortDescription>
         <description>Slovak</description>
         <languageList>
@@ -4887,7 +5204,7 @@
     <layout>
       <configItem>
         <name>es</name>
-        <!-- Keyboard indicator for Spanish layouts -->
+        
         <shortDescription>es</shortDescription>
         <description>Spanish</description>
         <languageList>
@@ -4927,6 +5244,18 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Spanish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Spanish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>ast</name>
             <shortDescription>ast</shortDescription>
             <description>Asturian (Spain, with bottom-dot H and bottom-dot L)</description>
@@ -4956,7 +5285,7 @@
     <layout>
       <configItem>
         <name>se</name>
-        <!-- Keyboard indicator for Swedish layouts -->
+        
         <shortDescription>sv</shortDescription>
         <description>Swedish</description>
         <languageList>
@@ -4978,8 +5307,20 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Swedish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Swedish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>rus</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Sweden, phonetic)</description>
             <languageList>
@@ -4990,7 +5331,7 @@
         <variant>
           <configItem>
             <name>rus_nodeadkeys</name>
-            <!-- Keyboard indicator for Russian layouts -->
+            
             <shortDescription>ru</shortDescription>
             <description>Russian (Sweden, phonetic, no dead keys)</description>
             <languageList>
@@ -5027,12 +5368,6 @@
         </variant>
         <variant>
           <configItem>
-            <name>us</name>
-            <description>Swedish (US, with Swedish letters)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>swl</name>
             <description>Swedish Sign Language</description>
             <languageList>
@@ -5045,7 +5380,7 @@
     <layout>
       <configItem>
         <name>ch</name>
-        <!-- Keyboard indicator for German layouts -->
+        
         <shortDescription>de</shortDescription>
         <description>German (Switzerland)</description>
         <languageList>
@@ -5063,7 +5398,7 @@
         <variant>
           <configItem>
             <name>de_nodeadkeys</name>
-            <!-- Keyboard indicator for German layouts -->
+            
             <shortDescription>de</shortDescription>
             <description>German (Switzerland, no dead keys)</description>
           </configItem>
@@ -5071,7 +5406,7 @@
         <variant>
           <configItem>
             <name>de_sundeadkeys</name>
-            <!-- Keyboard indicator for German layouts -->
+            
             <shortDescription>de</shortDescription>
             <description>German (Switzerland, with Sun dead keys)</description>
           </configItem>
@@ -5079,7 +5414,7 @@
         <variant>
           <configItem>
             <name>fr</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Switzerland)</description>
             <languageList>
@@ -5090,7 +5425,7 @@
         <variant>
           <configItem>
             <name>fr_nodeadkeys</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Switzerland, no dead keys)</description>
             <languageList>
@@ -5101,7 +5436,7 @@
         <variant>
           <configItem>
             <name>fr_sundeadkeys</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Switzerland, with Sun dead keys)</description>
             <languageList>
@@ -5112,7 +5447,7 @@
         <variant>
           <configItem>
             <name>fr_mac</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Switzerland, Macintosh)</description>
             <languageList>
@@ -5123,7 +5458,7 @@
         <variant>
           <configItem>
             <name>de_mac</name>
-            <!-- Keyboard indicator for German layouts -->
+            
             <shortDescription>de</shortDescription>
             <description>German (Switzerland, Macintosh)</description>
           </configItem>
@@ -5133,7 +5468,7 @@
     <layout>
       <configItem>
         <name>sy</name>
-        <!-- Keyboard indicator for Arabic layouts -->
+        
         <shortDescription>ar</shortDescription>
         <description>Arabic (Syria)</description>
         <languageList>
@@ -5144,7 +5479,7 @@
         <variant>
           <configItem>
             <name>syc</name>
-            <!-- Keyboard indicator for Syriac layouts -->
+            
             <shortDescription>syc</shortDescription>
             <description>Syriac</description>
           </configItem>
@@ -5152,7 +5487,7 @@
         <variant>
           <configItem>
             <name>syc_phonetic</name>
-            <!-- Keyboard indicator for Syriac layouts -->
+            
             <shortDescription>syc</shortDescription>
             <description>Syriac (phonetic)</description>
           </configItem>
@@ -5160,7 +5495,7 @@
         <variant>
           <configItem>
             <name>ku</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Syria, Latin Q)</description>
             <languageList>
@@ -5171,7 +5506,7 @@
         <variant>
           <configItem>
             <name>ku_f</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Syria, F)</description>
             <languageList>
@@ -5182,7 +5517,7 @@
         <variant>
           <configItem>
             <name>ku_alt</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Syria, Latin Alt-Q)</description>
             <languageList>
@@ -5195,7 +5530,7 @@
     <layout>
       <configItem>
         <name>tj</name>
-        <!-- Keyboard indicator for Tajik layouts -->
+        
         <shortDescription>tg</shortDescription>
         <description>Tajik</description>
         <languageList>
@@ -5214,7 +5549,7 @@
     <layout>
       <configItem>
         <name>lk</name>
-        <!-- Keyboard indicator for Sinhala layouts -->
+        
         <shortDescription>si</shortDescription>
         <description>Sinhala (phonetic)</description>
         <languageList>
@@ -5225,9 +5560,9 @@
         <variant>
           <configItem>
             <name>tam_unicode</name>
-            <!-- Keyboard indicator for Tamil layouts -->
+            
             <shortDescription>ta</shortDescription>
-            <description>Tamil (Sri Lanka, TamilNet '99)</description>
+            <description>Tamil (Sri Lanka, Unicode)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -5236,7 +5571,7 @@
         <variant>
           <configItem>
             <name>tam_TAB</name>
-            <description>Tamil (Sri Lanka, TamilNet '99, TAB encoding)</description>
+            <description>Tamil (Sri Lanka, TAB Typewriter)</description>
             <languageList>
               <iso639Id>tam</iso639Id>
             </languageList>
@@ -5245,7 +5580,6 @@
         <variant>
           <configItem>
             <name>us</name>
-            <!-- Keyboard indicator for US layouts -->
             <shortDescription>us</shortDescription>
             <description>Sinhala (US, with Sinhala letters)</description>
           </configItem>
@@ -5255,7 +5589,7 @@
     <layout>
       <configItem>
         <name>th</name>
-        <!-- Keyboard indicator for Thai layouts -->
+        
         <shortDescription>th</shortDescription>
         <description>Thai</description>
         <languageList>
@@ -5280,7 +5614,7 @@
     <layout>
       <configItem>
         <name>tr</name>
-        <!-- Keyboard indicator for Turkish layouts -->
+        
         <shortDescription>tr</shortDescription>
         <description>Turkish</description>
         <languageList>
@@ -5309,7 +5643,7 @@
         <variant>
           <configItem>
             <name>ku</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Turkey, Latin Q)</description>
             <languageList>
@@ -5320,7 +5654,7 @@
         <variant>
           <configItem>
             <name>ku_f</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Turkey, F)</description>
             <languageList>
@@ -5331,7 +5665,7 @@
         <variant>
           <configItem>
             <name>ku_alt</name>
-            <!-- Keyboard indicator for Kurdish layouts -->
+            
             <shortDescription>ku</shortDescription>
             <description>Kurdish (Turkey, Latin Alt-Q)</description>
             <languageList>
@@ -5347,8 +5681,20 @@
         </variant>
         <variant>
           <configItem>
+            <name>cmk_ed_ks</name>
+            <description>Turkish (Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>Turkish (Colemak[eD], unified symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>crh</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            
             <shortDescription>crh</shortDescription>
             <description>Crimean Tatar (Turkish Q)</description>
             <languageList>
@@ -5359,7 +5705,7 @@
         <variant>
           <configItem>
             <name>crh_f</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            
             <shortDescription>crh</shortDescription>
             <description>Crimean Tatar (Turkish F)</description>
             <languageList>
@@ -5370,7 +5716,7 @@
         <variant>
           <configItem>
             <name>crh_alt</name>
-            <!-- Keyboard indicator for Crimean Tatar layouts -->
+            
             <shortDescription>crh</shortDescription>
             <description>Crimean Tatar (Turkish Alt-Q)</description>
             <languageList>
@@ -5383,7 +5729,7 @@
     <layout>
       <configItem>
         <name>tw</name>
-        <!-- Keyboard indicator for Taiwanese layouts -->
+        
         <shortDescription>zh</shortDescription>
         <description>Taiwanese</description>
         <languageList>
@@ -5418,7 +5764,7 @@
         <variant>
           <configItem>
             <name>saisiyat</name>
-            <!-- Keyboard indicator for Saisiyat layouts -->
+            
             <shortDescription>xsy</shortDescription>
             <description>Saisiyat (Taiwan)</description>
             <languageList>
@@ -5431,7 +5777,7 @@
     <layout>
       <configItem>
         <name>ua</name>
-        <!-- Keyboard indicator for Ukranian layouts -->
+        
         <shortDescription>uk</shortDescription>
         <description>Ukrainian</description>
         <languageList>
@@ -5486,7 +5832,7 @@
     <layout>
       <configItem>
         <name>gb</name>
-        <!-- Keyboard indicator for English layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (UK)</description>
         <languageList>
@@ -5538,13 +5884,14 @@
         </variant>
         <variant>
           <configItem>
-            <name>pl</name>
-            <!-- Keyboard indicator for Polish layouts -->
-            <shortDescription>pl</shortDescription>
-            <description>Polish (British keyboard)</description>
-            <languageList>
-              <iso639Id>pol</iso639Id>
-            </languageList>
+            <name>cmk_ed_ks</name>
+            <description>English (UK, Colemak[eD], keep local symbols)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>cmk_ed_us</name>
+            <description>English (UK, Colemak[eD], unified symbols)</description>
           </configItem>
         </variant>
       </variantList>
@@ -5552,7 +5899,7 @@
     <layout>
       <configItem>
         <name>uz</name>
-        <!-- Keyboard indicator for Uzbek layouts -->
+        
         <shortDescription>uz</shortDescription>
         <description>Uzbek</description>
         <languageList>
@@ -5571,32 +5918,19 @@
     <layout>
       <configItem>
         <name>vn</name>
-        <!-- Keyboard indicator for Vietnamese layouts -->
+        
         <shortDescription>vi</shortDescription>
         <description>Vietnamese</description>
         <languageList>
           <iso639Id>vie</iso639Id>
         </languageList>
       </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>us</name>
-            <description>Vietnamese (US, with Vietnamese letters)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>fr</name>
-            <description>Vietnamese (French, with Vietnamese letters)</description>
-          </configItem>
-        </variant>
-      </variantList>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
         <name>kr</name>
-        <!-- Keyboard indicator for Korean layouts -->
+        
         <shortDescription>ko</shortDescription>
         <description>Korean</description>
         <languageList>
@@ -5615,7 +5949,7 @@
     <layout>
       <configItem>
         <name>nec_vndr/jp</name>
-        <!-- Keyboard indicator for Japaneses -->
+        
         <shortDescription>ja</shortDescription>
         <description>Japanese (PC-98)</description>
         <countryList>
@@ -5625,11 +5959,12 @@
           <iso639Id>jpn</iso639Id>
         </languageList>
       </configItem>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
         <name>ie</name>
-        <!-- Keyboard indicator for Irish layouts -->
+        
         <shortDescription>ie</shortDescription>
         <description>Irish</description>
         <languageList>
@@ -5675,7 +6010,7 @@
     <layout>
       <configItem>
         <name>pk</name>
-        <!-- Keyboard indicator for Urdu layouts -->
+        
         <shortDescription>ur</shortDescription>
         <description>Urdu (Pakistan)</description>
         <languageList>
@@ -5708,7 +6043,7 @@
         <variant>
           <configItem>
             <name>snd</name>
-            <!-- Keyboard indicator for Sindhi layouts -->
+            
             <shortDescription>sd</shortDescription>
             <description>Sindhi</description>
             <languageList>
@@ -5721,7 +6056,7 @@
     <layout>
       <configItem>
         <name>mv</name>
-        <!-- Keyboard indicator for Dhivehi layouts -->
+        
         <shortDescription>dv</shortDescription>
         <description>Dhivehi</description>
         <languageList>
@@ -5733,7 +6068,7 @@
     <layout>
       <configItem>
         <name>za</name>
-        <!-- Keyboard indicator for English layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (South Africa)</description>
         <languageList>
@@ -5744,7 +6079,7 @@
     <layout>
       <configItem>
         <name>epo</name>
-        <!-- Keyboard indicator for Esperanto layouts -->
+        
         <shortDescription>eo</shortDescription>
         <description>Esperanto</description>
         <languageList>
@@ -5763,12 +6098,12 @@
     <layout>
       <configItem>
         <name>np</name>
-        <!-- Keyboard indicator for Nepali layouts -->
+        
         <shortDescription>ne</shortDescription>
         <description>Nepali</description>
         <languageList>
           <iso639Id>nep</iso639Id>
-          <!-- sat-Deva used in Nepal: http://www.ethnologue.com/language/sat -->
+          
           <iso639Id>sat</iso639Id>
         </languageList>
       </configItem>
@@ -5776,7 +6111,7 @@
     <layout>
       <configItem>
         <name>ng</name>
-        <!-- Keyboard indicator for English layouts -->
+        
         <shortDescription>en</shortDescription>
         <description>English (Nigeria)</description>
         <languageList>
@@ -5787,7 +6122,7 @@
         <variant>
           <configItem>
             <name>igbo</name>
-            <!-- Keyboard indicator for Igbo layouts -->
+            
             <shortDescription>ig</shortDescription>
             <description>Igbo</description>
             <languageList>
@@ -5798,7 +6133,7 @@
         <variant>
           <configItem>
             <name>yoruba</name>
-            <!-- Keyboard indicator for Yoruba layouts -->
+            
             <shortDescription>yo</shortDescription>
             <description>Yoruba</description>
             <languageList>
@@ -5809,7 +6144,7 @@
         <variant>
           <configItem>
             <name>hausa</name>
-            <!-- Keyboard indicator for Hausa layouts -->
+            
             <shortDescription>ha</shortDescription>
             <description>Hausa (Nigeria)</description>
             <languageList>
@@ -5822,7 +6157,7 @@
     <layout>
       <configItem>
         <name>et</name>
-        <!-- Keyboard indicator for Amharic layouts -->
+        
         <shortDescription>am</shortDescription>
         <description>Amharic</description>
         <languageList>
@@ -5834,7 +6169,7 @@
     <layout>
       <configItem>
         <name>sn</name>
-        <!-- Keyboard indicator for Wolof layouts -->
+        
         <shortDescription>wo</shortDescription>
         <description>Wolof</description>
         <languageList>
@@ -5846,7 +6181,7 @@
     <layout>
       <configItem>
         <name>brai</name>
-        <!-- Keyboard indicator for Braille layouts -->
+        
         <shortDescription>brl</shortDescription>
         <description>Braille</description>
       </configItem>
@@ -5859,20 +6194,8 @@
         </variant>
         <variant>
           <configItem>
-            <name>left_hand_invert</name>
-            <description>Braille (left-handed inverted thumb)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
             <name>right_hand</name>
             <description>Braille (right-handed)</description>
-          </configItem>
-        </variant>
-        <variant>
-          <configItem>
-            <name>right_hand_invert</name>
-            <description>Braille (right-handed inverted thumb)</description>
           </configItem>
         </variant>
       </variantList>
@@ -5880,7 +6203,7 @@
     <layout>
       <configItem>
         <name>tm</name>
-        <!-- Keyboard indicator for Turkmen layouts -->
+        
         <shortDescription>tk</shortDescription>
         <description>Turkmen</description>
         <languageList>
@@ -5899,7 +6222,7 @@
     <layout>
       <configItem>
         <name>ml</name>
-        <!-- Keyboard indicator for Bambara layouts -->
+        
         <shortDescription>bm</shortDescription>
         <description>Bambara</description>
         <languageList>
@@ -5910,7 +6233,7 @@
         <variant>
           <configItem>
             <name>fr-oss</name>
-            <!-- Keyboard indicator for French layouts -->
+            
             <shortDescription>fr</shortDescription>
             <description>French (Mali, alt.)</description>
             <languageList>
@@ -5921,7 +6244,7 @@
         <variant>
           <configItem>
             <name>us-mac</name>
-            <!-- Keyboard indicator for English layouts -->
+            
             <shortDescription>en</shortDescription>
             <description>English (Mali, US, Macintosh)</description>
             <languageList>
@@ -5932,7 +6255,7 @@
         <variant>
           <configItem>
             <name>us-intl</name>
-            <!-- Keyboard indicator for English layouts -->
+            
             <shortDescription>en</shortDescription>
             <description>English (Mali, US, intl.)</description>
             <languageList>
@@ -5945,7 +6268,7 @@
     <layout>
       <configItem>
         <name>tz</name>
-        <!-- Keyboard indicator for Swahili layouts -->
+        
         <shortDescription>sw</shortDescription>
         <description>Swahili (Tanzania)</description>
         <languageList>
@@ -5983,7 +6306,7 @@
     <layout>
       <configItem>
         <name>ke</name>
-        <!-- Keyboard indicator for Swahili layouts -->
+        
         <shortDescription>sw</shortDescription>
         <description>Swahili (Kenya)</description>
         <languageList>
@@ -5994,7 +6317,7 @@
         <variant>
           <configItem>
             <name>kik</name>
-            <!-- Keyboard indicator for Kikuyu layouts -->
+            
             <shortDescription>ki</shortDescription>
             <description>Kikuyu</description>
             <languageList>
@@ -6007,7 +6330,7 @@
     <layout>
       <configItem>
         <name>bw</name>
-        <!-- Keyboard indicator for Tswana layouts -->
+        
         <shortDescription>tn</shortDescription>
         <description>Tswana</description>
         <languageList>
@@ -6018,7 +6341,7 @@
     <layout>
       <configItem>
         <name>ph</name>
-        <!-- Keyboard indicator for Filipino layouts -->
+        
         <shortDescription>ph</shortDescription>
         <description>Filipino</description>
         <languageList>
@@ -6189,7 +6512,7 @@
           <iso639Id>mfa</iso639Id>
         </languageList>
       </configItem>
-      <variantList></variantList>
+      <variantList/>
     </layout>
     <layout>
       <configItem>
@@ -6218,7 +6541,7 @@
   </layoutList>
   <optionList>
     <group allowMultipleSelection="true">
-      <!-- The key combination used to switch between groups -->
+      
       <configItem>
         <name>grp</name>
         <description>Switching to another layout</description>
@@ -6447,8 +6770,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- The key combination used to choose the 3rd (and 4th, together with Shift)
-           level of symbols -->
+      
       <configItem>
         <name>lv3</name>
         <description>Key to choose the 3rd level</description>
@@ -6557,7 +6879,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- Tweaking the position of the "Ctrl" key -->
+      
       <configItem>
         <name>ctrl</name>
         <description>Ctrl position</description>
@@ -6629,7 +6951,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- Using startard LEDs to indicate the alternative (not first) group(s) -->
+      
       <configItem>
         <name>grp_led</name>
         <description>Use keyboard LED to show alternative layout</description>
@@ -6654,7 +6976,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      <!-- Select a keypad type -->
+      
       <configItem>
         <name>keypad</name>
         <description>Layout of numeric keypad</description>
@@ -6708,16 +7030,16 @@
        </configItem>
       </option>
     </group>
-    <!-- This option should override the KPDL key defined in keypad; I hope it's declared in the right place -->
+    
     <group allowMultipleSelection="false">
-      <!-- Select a keypad KPDL variant -->
+      
       <configItem>
         <name>kpdl</name>
         <description>Numeric keypad Delete behavior</description>
       </configItem>
       <option>
         <configItem>
-          <!-- Actually, with KP_DECIMAL, as the old keypad(dot) -->
+          
           <name>kpdl:dot</name>
           <description>Legacy key with dot</description>
        </configItem>
@@ -6725,7 +7047,7 @@
       <option>
         <configItem>
           <name>kpdl:comma</name>
-          <!-- Actually, with KP_SEPARATOR, as the old keypad(comma) -->
+          
           <description>Legacy key with comma</description>
        </configItem>
       </option>
@@ -6756,8 +7078,7 @@
       <option>
         <configItem>
           <name>kpdl:kposs</name>
-          <!-- This assumes the KP_ abstract symbols are actually useful for some apps
-               The description needs to be rewritten -->
+          
           <description>Four-level key with abstract separators</description>
        </configItem>
       </option>
@@ -6769,9 +7090,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      <!-- Caps Lock tweaks.
-           "Internal" capitalization means capitalization using some internal tables.
-           Otherwise "as Shift" - means using next group. -->
+      
       <configItem>
         <name>caps</name>
         <description>Caps Lock behavior</description>
@@ -6826,12 +7145,6 @@
       </option>
       <option>
         <configItem>
-          <name>caps:escape_shifted_capslock</name>
-          <description>Make unmodified Caps Lock an additional Esc, but Shift + Caps Lock behaves like regular Caps Lock</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
           <name>caps:backspace</name>
           <description>Make Caps Lock an additional Backspace</description>
         </configItem>
@@ -6874,7 +7187,7 @@
       </option>
     </group>
     <group allowMultipleSelection="false">
-      <!-- Using special PC keys (Win, Menu) to work as standard X keys (Super, Hyper, etc.) -->
+      
       <configItem>
         <name>altwin</name>
         <description>Alt/Win key behavior</description>
@@ -6953,7 +7266,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- Tweaking the position of the "Compose" key: mapping to existing PC keys -->
+      
       <configItem>
         <name>Compose key</name>
         <description>Position of Compose key</description>
@@ -7122,6 +7435,18 @@
       </option>
       <option>
         <configItem>
+          <name>misc:extend</name>
+          <description>Enable level5 Extend mappings (home position arrows etc)</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
+          <name>misc:cmk_curl_dh</name>
+          <description>Colemak Curl(DH) ergo mod</description>
+        </configItem>
+      </option>
+      <option>
+        <configItem>
           <name>shift:both_capslock</name>
           <description>Both Shift together enable Caps Lock</description>
         </configItem>
@@ -7158,7 +7483,7 @@
       </option>
     </group>
     <group allowMultipleSelection="true">
-      <!-- Special shortcuts for the Euro character -->
+      
       <configItem>
         <name>currencysign</name>
         <description>Adding currency signs to certain keys</description>
@@ -7223,47 +7548,22 @@
           <description>Right Win chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
         </configItem>
       </option>
-<!--
       <option>
         <configItem>
-          <name>lv5:lsgt_switch_lock_cancel</name>
-          <description>&lt;Less/Greater&gt; chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
+          <name>lv5:caps_switch_lock</name>
+          <description>Caps Lock chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
         </configItem>
       </option>
       <option>
         <configItem>
-          <name>lv5:ralt_switch_lock_cancel</name>
-          <description>Right Alt chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
+          <name>lv5:lctl_switch_lock</name>
+          <description>Left Ctrl chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
         </configItem>
       </option>
-      <option>
-        <configItem>
-          <name>lv5:lwin_switch_lock_cancel</name>
-          <description>Left Win chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:rwin_switch_lock_cancel</name>
-          <description>Right Win chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:lsgt_switch_lock_cancel</name>
-          <description>&lt;Less/Greater&gt; chooses 5th level; acts as onetime lock lock when pressed together with another 5th level chooser</description>
-        </configItem>
-      </option>
-      <option>
-        <configItem>
-          <name>lv5:ralt_switch_lock_cancel</name>
-          <description>Right Alt chooses 5th level; acts as onetime lock when pressed together with another 5th level chooser</description>
-        </configItem>
-      </option>
--->
+
     </group>
     <group allowMultipleSelection="false">
-      <!-- Let space output NBSP, NNBSP, ZWNJ, and ZWJ for the desired level -->
+      
       <configItem>
         <name>nbsp</name>
         <description>Using space key to input non-breaking space</description>
@@ -7389,11 +7689,17 @@
        </configItem>
       </option>
     </group>
-    <group allowMultipleSelection="false">
+    <group allowMultipleSelection="true">
       <configItem>
         <name>korean</name>
         <description>Korean Hangul/Hanja keys</description>
       </configItem>
+      <option>
+        <configItem>
+          <name>korean:hw_keys</name>
+          <description>Hardware Hangul/Hanja keys</description>
+        </configItem>
+      </option>
       <option>
         <configItem>
           <name>korean:ralt_rctrl</name>
