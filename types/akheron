@@ -1,0 +1,86 @@
+default xkb_types "akheron" {
+    // Modifiers in use: Shift, Lock, Control, Mod1 (Left Alt), Mod4 (Left win key)
+
+    type "ONE_LEVEL" {
+        modifiers = none;
+        level_name[Level1] = "Any";
+    };
+    type "TWO_LEVEL" {
+        modifiers = Shift;
+        map[Shift] = Level2;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+    };
+    type "THREE_LEVEL" {
+        modifiers = Shift+Mod5;
+        map[Shift] = Level2;
+        map[Mod5] = Level3;
+        map[Shift+Mod5] = Level3;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "Mod5";
+    };
+    type "ALPHABETIC" {
+        modifiers = Shift+Lock;
+        map[Shift] = Level2;
+        map[Lock] = Level2;
+        map[Shift+Lock] = Level1;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Caps";
+    };
+    type "ALPHABETIC+MOD5" {
+        modifiers = Shift+Lock+Mod5;
+        map[Shift] = Level2;
+        map[Lock] = Level2;
+        map[Shift+Lock] = Level1;
+        map[Mod5] = Level3;
+        map[Shift+Mod5] = Level3;
+        map[Lock+Mod5] = Level3;
+        map[Shift+Lock+Mod5] = Level3;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Caps";
+        level_name[Level3] = "Mod5";
+    };
+    type "KEYPAD" {
+        modifiers = Shift;
+        map[SHIFT] = Level2;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Number";
+    };
+    type "CTRL+ALT" {
+        modifiers = Control+Mod1;
+        map[Control+Mod1] = Level2;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Ctrl+Alt";
+    };
+    type "SHIFT_LOCK_MOD5_ALT" {
+        modifiers = Shift+Lock+Mod5+Mod1;
+        map[None] = Level1;
+        map[Shift+Lock] = Level1;
+        map[Shift] = Level2;
+        map[Lock] = Level2;
+        map[Mod5] = Level3;
+        map[Shift+Mod5] = Level3;
+        preserve[Shift+Mod5] = Shift;
+        map[Lock+Mod5] = Level3;
+        map[Shift+Lock+Mod5] = Level3;
+        preserve[Shift+Lock+Mod5] = Shift;
+        map[Mod1] = Level4;
+        map[Shift+Mod1] = Level4;
+        preserve[Shift+Mod1] = Shift;
+        map[Lock+Mod1] = Level4;
+        map[Shift+Lock+Mod1] = Level4;
+        preserve[Shift+Lock+Mod1] = Shift;
+        map[Mod5+Mod1] = Level5;
+        map[Shift+Mod5+Mod1] = Level5;
+        preserve[Shift+Mod5+Mod1] = Shift;
+        map[Lock+Mod5+Mod1] = Level5;
+        map[Shift+Lock+Mod5+Mod1] = Level5;
+        preserve[Shift+Lock+Mod5+Mod1] = Shift;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "Mod5";
+        level_name[Level4] = "Alt";
+        level_name[Level5] = "Mod5+Alt";
+    };
+};
