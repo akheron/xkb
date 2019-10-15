@@ -2,9 +2,9 @@ default partial alphanumeric_keys
 xkb_symbols "akheron" {
     include "fi(cmk_ed_ks)"
     include "colemak(cmk_ed_dh)"
-    include "level3(lalt_switch)"
+    include "level3(caps_switch)"
     include "extend_akheron(alt_lwin)"
-    include "extend_akheron(caps_switch)"
+    include "extend_akheron(lv5_lalt_switch)"
     include "group(switch)"
     include "extend_akheron(lv5)"
     include "extend_akheron(group2)"
@@ -18,9 +18,9 @@ xkb_symbols "alt_lwin" {
 };
 
 partial modifier_keys
-xkb_symbols "caps_switch" {
+xkb_symbols "lv5_lalt_switch" {
     include "level5(modifier_mapping)"
-    key <CAPS> {
+    key <LALT> {
         type[Group1] = "ONE_LEVEL",
         symbols[Group1] = [ ISO_Level5_Shift ]
     };
@@ -38,11 +38,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control),
             RedirectKey(key=<AE01>, clearmods=all, mods=Mod1),
             RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Mod1),
-            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE01>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE01>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -54,12 +55,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE02>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE02>, clearmods=all, mods=Control),
             RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -71,12 +72,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE03>, clearmods=all, mods=Control),
             RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE03>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -88,12 +89,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE04>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE04>, clearmods=all, mods=Control),
             RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE04>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -105,12 +106,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE05>, clearmods=all, mods=Control),
             RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE05>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -122,12 +123,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE06>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE06>, clearmods=all, mods=Control),
             RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE06>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE06>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -139,12 +140,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE07>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE07>, clearmods=all, mods=Control),
             RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE07>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE07>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -156,12 +157,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE08>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE08>, clearmods=all, mods=Control),
             RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE08>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -173,12 +174,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE09>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE09>, clearmods=all, mods=Control),
             RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE09>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE09>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -190,12 +191,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE10>, clearmods=all, mods=Control),
             RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AE10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -207,12 +208,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<TAB>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<TAB>, clearmods=all, mods=Control),
             RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<TAB>, clearmods=all, mods=Control),
-            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<TAB>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -224,12 +225,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD01>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD01>, clearmods=all, mods=Control),
             RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD01>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -241,12 +242,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD02>, clearmods=all, mods=Control),
             RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -258,12 +259,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD03>, clearmods=all, mods=Control),
             RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD03>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -275,12 +276,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD04>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD04>, clearmods=all, mods=Control),
             RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD04>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -292,12 +293,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD05>, clearmods=all, mods=Control),
             RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -309,12 +310,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AD06>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AD06>, clearmods=all, mods=Control),
             RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AD06>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AD06>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -326,14 +327,15 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: C-w
-            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
-            // Level 5: Backspace
+            // Level 3: Backspace
             RedirectKey(key=<BKSP>, clearmods=all),
             RedirectKey(key=<BKSP>, clearmods=all, mods=Shift),
-            NoAction(),
-            NoAction()
+            // Level 5: C-w
+            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
+            // Level 3+5: -
+            RedirectKey(key=<AD07>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD07>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -345,12 +347,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: -
-            NoAction(),
-            NoAction(),
-            // Level 5: Up
+            // Level 3: Up
             RedirectKey(key=<UP>, clearmods=all),
             RedirectKey(key=<UP>, clearmods=all, mods=Shift),
+            // Level 5: -
+            RedirectKey(key=<AD08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD08>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: PgUp
             RedirectKey(key=<PGUP>, clearmods=all),
             RedirectKey(key=<PGUP>, clearmods=all, mods=Shift)
@@ -365,12 +367,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: M-d
-            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
-            // Level 5: Delete
+            // Level 3: Delete
             RedirectKey(key=<DELE>, clearmods=all),
             RedirectKey(key=<DELE>, clearmods=all, mods=Shift),
+            // Level 5: M-d
+            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: C-k
             RedirectKey(key=<AC06>, clearmods=all, mods=Control),
             RedirectKey(key=<AC06>, clearmods=all, mods=Shift+Control)
@@ -385,12 +387,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC01>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC01>, clearmods=all, mods=Control),
             RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC01>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -402,12 +404,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC02>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC02>, clearmods=all, mods=Control),
             RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -419,12 +421,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC03>, clearmods=all, mods=Control),
             RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -436,12 +438,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC04>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC04>, clearmods=all, mods=Control),
             RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC04>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -453,12 +455,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC05>, clearmods=all, mods=Control),
             RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC05>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -470,15 +472,15 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: M-x
-            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
-            // Level 5: C-x
+            // Level 3: C-x
             RedirectKey(key=<AB02>, clearmods=all, mods=Control),
             RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control),
+            // Level 5: M-x
+            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: -
-            NoAction(),
-            NoAction()
+            RedirectKey(key=<AC06>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC06>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -490,12 +492,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: M-b
-            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
-            // Level 5: Left
+            // Level 3: Left
             RedirectKey(key=<LEFT>, clearmods=all),
             RedirectKey(key=<LEFT>, clearmods=all, mods=Shift),
+            // Level 5: M-b
+            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: Home
             RedirectKey(key=<HOME>, clearmods=all),
             RedirectKey(key=<HOME>, clearmods=all, mods=Shift)
@@ -510,12 +512,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: -
-            NoAction(),
-            NoAction(),
-            // Level 5: Down
+            // Level 3: Down
             RedirectKey(key=<DOWN>, clearmods=all),
             RedirectKey(key=<DOWN>, clearmods=all, mods=Shift),
+            // Level 5: -
+            RedirectKey(key=<AC08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC08>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: PgDown
             RedirectKey(key=<PGDN>, clearmods=all),
             RedirectKey(key=<PGDN>, clearmods=all, mods=Shift)
@@ -530,12 +532,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: M-f
-            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
-            // Level 5: Right
+            // Level 3: Right
             RedirectKey(key=<RGHT>, clearmods=all),
             RedirectKey(key=<RGHT>, clearmods=all, mods=Shift),
+            // Level 5: M-f
+            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
             // Level 3+5: End
             RedirectKey(key=<END>, clearmods=all),
             RedirectKey(key=<END>, clearmods=all)
@@ -550,12 +552,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AC10>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AC10>, clearmods=all, mods=Control),
             RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AC10>, clearmods=all, mods=Control),
-            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AC10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -567,12 +569,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB01>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB01>, clearmods=all, mods=Control),
             RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB01>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -584,12 +586,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB02>, clearmods=all, mods=Control),
             RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -601,12 +603,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB03>, clearmods=all, mods=Control),
             RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB03>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -618,12 +620,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB04>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB04>, clearmods=all, mods=Control),
             RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB04>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -635,12 +637,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB05>, clearmods=all, mods=Control),
             RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB05>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -652,12 +654,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            // Level 3: M-y
+            // Level 3: Shift-Insert
+            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
+            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
+            // Level 5: M-y
             RedirectKey(key=<AD09>, clearmods=all, mods=Mod1),
             RedirectKey(key=<AD09>, clearmods=all, mods=Shift+Mod1),
-            // Level 5: Shift-Insert
-            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
-            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
             // Level 3+5: C-M-y
             RedirectKey(key=<AD09>, clearmods=all, mods=Control+Mod1),
             RedirectKey(key=<AD09>, clearmods=all, mods=Shift+Control+Mod1)
@@ -672,12 +674,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB07>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB07>, clearmods=all, mods=Control),
             RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB07>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB07>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -689,12 +691,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB08>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB08>, clearmods=all, mods=Control),
             RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB08>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -706,12 +708,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB09>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB09>, clearmods=all, mods=Control),
             RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB09>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB09>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -723,12 +725,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AB10>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AB10>, clearmods=all, mods=Control),
             RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AB10>, clearmods=all, mods=Control),
-            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<AB10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -740,12 +742,12 @@ xkb_symbols "lv5" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<SPCE>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<SPCE>, clearmods=all, mods=Control),
             RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<SPCE>, clearmods=all, mods=Control),
-            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Control)
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 };
