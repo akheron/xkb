@@ -2,6 +2,7 @@ default partial alphanumeric_keys
 xkb_symbols "akheron" {
     include "akheron(fi_cmk_ed_ks)"
     include "colemak(cmk_ed_dh)"
+    include "akheron(symbol_tweaks)"
     include "level3(caps_switch)"
     include "akheron(alt_lwin)"
     include "akheron(lv5_lalt_switch)"
@@ -41,6 +42,11 @@ xkb_symbols "caps_b" {
         type[Group1] = "ONE_LEVEL",
         symbols[Group1] = [ Caps_Lock ]
     };
+};
+
+partial alphanumeric_keys
+xkb_symbols "symbol_tweaks" {
+    key <TLDE> { [ grave, asciitilde ] };
 };
 
 partial alphanumeric_keys modifier_keys
