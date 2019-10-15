@@ -1,13 +1,13 @@
 default partial alphanumeric_keys
 xkb_symbols "akheron" {
-    include "extend_akheron(fi_cmk_ed_ks)"
+    include "akheron(fi_cmk_ed_ks)"
     include "colemak(cmk_ed_dh)"
     include "level3(caps_switch)"
-    include "extend_akheron(alt_lwin)"
-    include "extend_akheron(lv5_lalt_switch)"
+    include "akheron(alt_lwin)"
+    include "akheron(lv5_lalt_switch)"
     include "group(switch)"
-    include "extend_akheron(lv5)"
-    include "extend_akheron(group2)"
+    include "akheron(lv5)"
+    include "akheron(group2)"
     name[Group1] = "Finnish (Colemak[akheron])";
 };
 
