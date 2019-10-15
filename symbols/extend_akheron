@@ -1,6 +1,6 @@
 default partial alphanumeric_keys
 xkb_symbols "akheron" {
-    include "fi(cmk_ed_ks)"
+    include "extend_akheron(fi_cmk_ed_ks)"
     include "colemak(cmk_ed_dh)"
     include "level3(caps_switch)"
     include "extend_akheron(alt_lwin)"
@@ -8,7 +8,15 @@ xkb_symbols "akheron" {
     include "group(switch)"
     include "extend_akheron(lv5)"
     include "extend_akheron(group2)"
-    name[Group1]= "Finnish (Colemak[eD+akheron])";
+    name[Group1] = "Finnish (Colemak[akheron])";
+};
+
+partial alphanumeric_keys
+xkb_symbols "fi_cmk_ed_ks" {
+    include "fi(kotoistus)"
+    include "colemak(cmk_ed_letters)"
+
+    key <AD10> { [odiaeresis, Odiaeresis, oslash, Ooblique ] };
 };
 
 partial modifier_keys
@@ -776,12 +784,6 @@ xkb_symbols "group2" {
     };
     key <AD08> {
         symbols[Group2] = [ bracketleft ]
-    };
-    key <AD09> {
-        symbols[Group2] = [ bracketright ]
-    };
-    key <AD09> {
-        symbols[Group2] = [ bracketright ]
     };
     key <AD09> {
         symbols[Group2] = [ bracketright ]
