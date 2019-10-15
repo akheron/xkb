@@ -8,6 +8,7 @@ xkb_symbols "akheron" {
     include "akheron(lv5_lalt_switch)"
     include "group(switch)"
     include "akheron(caps_b)"
+    include "akheron(rwin_menu_prsc_super)"
     include "akheron(lv5)"
     include "akheron(group2)"
     name[Group1] = "Finnish (Colemak[akheron])";
@@ -42,6 +43,14 @@ xkb_symbols "caps_b" {
         type[Group1] = "ONE_LEVEL",
         symbols[Group1] = [ Caps_Lock ]
     };
+};
+
+partial modifier_keys
+xkb_symbols "rwin_menu_prsc_super" {
+    key <RWIN> { [ Super_R ] };
+    key <MENU> { [ Super_R ] };
+    key <PRSC> { [ Super_R ] };
+    modifier_map Mod4 { <RWIN>, <MENU>, <PRSC> };
 };
 
 partial alphanumeric_keys

@@ -9,7 +9,8 @@ Finnish symbols from the `fi` keymap in place.
 I've moved many AltGr bindings to a more comfortable location, and
 added an "extend" layer (inspired by DreymaR), which is activated by
 pressing Caps Lock, left Alt, or both, and has e.g. arrows, Backspace,
-Delete and many Emacs specific keys.
+Delete and many Emacs specific keys. Right Win key, Menu key and Print
+Screen key act as Super (Mod4).
 
 This is the base layout. By pressing AltGr, you get the symbols in the lower right.
 ```
@@ -27,7 +28,7 @@ This is the base layout. By pressing AltGr, you get the symbols in the lower rig
 ┃Shift ┃ z | │ x   │ c : │ d ; │ v   │ Lock│ m   │ h   │ ,   │ .   │ -   ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
-┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
+┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
@@ -72,7 +73,7 @@ The left Win key acts as an unmodified Alt (Meta1).
 ┃Shift ┃     │     │     │     │     │ Lock│ M-y │     │     │     │     ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃Pressed┃                                   ┃       ┃       ┃       ┃
-┃ Ctrl  ┃ Alt   ┃  Alt! ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
+┃ Ctrl  ┃ Alt   ┃  Alt! ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
@@ -93,7 +94,7 @@ When both Caps Lock and Left Alt are pressed:
 ┃Shift ┃     │     │     │     │     │ Lock│     │     │     │     │     ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃Pressed┃                                   ┃       ┃       ┃       ┃
-┃ Ctrl  ┃ Meta  ┃  Alt! ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
+┃ Ctrl  ┃ Meta  ┃  Alt! ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
