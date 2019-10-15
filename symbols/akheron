@@ -788,6 +788,9 @@ xkb_symbols "group2" {
     key <AE04> {
         symbols[Group2] = [ EuroSign ]
     };
+    key <AE11> {
+        symbols[Group2] = [ backslash ]
+    };
     key <AD01> {
         symbols[Group2] = [ less ]
     };
