@@ -6,6 +6,7 @@ xkb_symbols "akheron" {
     include "akheron(alt_lwin)"
     include "akheron(lv5_lalt_switch)"
     include "group(switch)"
+    include "akheron(caps_b)"
     include "akheron(lv5)"
     include "akheron(group2)"
     name[Group1] = "Finnish (Colemak[akheron])";
@@ -31,6 +32,14 @@ xkb_symbols "lv5_lalt_switch" {
     key <LALT> {
         type[Group1] = "ONE_LEVEL",
         symbols[Group1] = [ ISO_Level5_Shift ]
+    };
+};
+
+partial modifier_keys
+xkb_symbols "caps_b" {
+    key <LSGT> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Caps_Lock ]
     };
 };
 
