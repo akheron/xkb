@@ -47,6 +47,8 @@ xkb_symbols "caps_b" {
 partial alphanumeric_keys
 xkb_symbols "symbol_tweaks" {
     key <TLDE> { [ grave, asciitilde ] };
+    key <AE04> { [ 4, dollar ] };
+    key <AE12> { [ asciicircum, dead_circumflex ] };
 };
 
 partial alphanumeric_keys modifier_keys
