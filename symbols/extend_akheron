@@ -1,0 +1,811 @@
+default partial alphanumeric_keys
+xkb_symbols "akheron" {
+    include "fi(cmk_ed_ks)"
+    include "colemak(cmk_ed_dh)"
+    include "level3(lalt_switch)"
+    include "extend_akheron(alt_lwin)"
+    include "level5(caps_switch_lock)"
+    include "group(switch)"
+    include "extend_akheron(lv5)"
+    include "extend_akheron(group2)"
+    name[Group1]= "Finnish (Colemak[eD+akheron])";
+};
+
+partial modifier_keys
+xkb_symbols "alt_lwin" {
+    key <LWIN> { [ Alt_L ] };
+    modifier_map Mod1 { <LWIN> };
+};
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "lv5" {
+    key.type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC";
+
+    // 1
+    key <AE01> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, 1, 1,
+            1, 1, 1, 1
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE01>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 2
+    key <AE02> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, 2, 2,
+            2, 2, 2, 2
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE02>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 3
+    key <AE03> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            3, 3, 3, 3
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE03>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 4
+    key <AE04> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            4, 4, 4, 4
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE04>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 5
+    key <AE05> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            5, 5, 5, 5
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE05>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 6
+    key <AE06> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            6, 6, 6, 6
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE06>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 7
+    key <AE07> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            7, 7, 7, 7
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE07>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 8
+    key <AE08> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            8, 8, 8, 8
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE08>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 9
+    key <AE09> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            9, 9, 9, 9
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE09>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // 0
+    key <AE10> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            0, 0, 0, 0
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // Tab
+    key <TAB> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            Tab, Tab, Tab, Tab
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Control),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Control),
+            RedirectKey(key=<TAB>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // Q
+    key <AD01> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            q, q, q, q
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD01>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // W
+    key <AD02> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            w, w, w, w
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // F
+    key <AD03> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            f, f, f, f
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD03>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // P
+    key <AD04> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            p, p, p, p
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD04>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // B
+    key <AD05> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            b, b, b, b
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // J
+    key <AD06> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            j, j, j, j
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD06>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // L
+    key <AD07> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            l, l, l, l
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: C-w
+            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
+            // Level 5: Backspace
+            RedirectKey(key=<BKSP>, clearmods=all),
+            RedirectKey(key=<BKSP>, clearmods=all, mods=Shift),
+            NoAction(),
+            NoAction()
+        ]
+    };
+
+    // U
+    key <AD08> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            u, u, u, u
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: -
+            NoAction(),
+            NoAction(),
+            // Level 5: Up
+            RedirectKey(key=<UP>, clearmods=all),
+            RedirectKey(key=<UP>, clearmods=all, mods=Shift),
+            // Level 3+5: PgUp
+            RedirectKey(key=<PGUP>, clearmods=all),
+            RedirectKey(key=<PGUP>, clearmods=all, mods=Shift)
+        ]
+    };
+
+    // Y
+    key <AD09> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            y, y, y, y
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: M-d
+            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: Delete
+            RedirectKey(key=<DELE>, clearmods=all),
+            RedirectKey(key=<DELE>, clearmods=all, mods=Shift),
+            // Level 3+5: C-k
+            RedirectKey(key=<AC06>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC06>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // A
+    key <AC01> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            a, a, a, a
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC01>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // R
+    key <AC02> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            r, r, r, r
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC02>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // S
+    key <AC03> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            s, s, s, s
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // T
+    key <AC04> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            t, t, t, t
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC04>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // G
+    key <AC05> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            g, g, g, g
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC05>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // K
+    key <AC06> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            k, k, k, k
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: M-x
+            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: C-x
+            RedirectKey(key=<AB02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control),
+            // Level 3+5: -
+            NoAction(),
+            NoAction()
+        ]
+    };
+
+    // N
+    key <AC07> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            m, m, m, m
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: M-b
+            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: Left
+            RedirectKey(key=<LEFT>, clearmods=all),
+            RedirectKey(key=<LEFT>, clearmods=all, mods=Shift),
+            // Level 3+5: Home
+            RedirectKey(key=<HOME>, clearmods=all),
+            RedirectKey(key=<HOME>, clearmods=all, mods=Shift)
+        ]
+    };
+
+    // E
+    key <AC08> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            e, e, e, e
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: -
+            NoAction(),
+            NoAction(),
+            // Level 5: Down
+            RedirectKey(key=<DOWN>, clearmods=all),
+            RedirectKey(key=<DOWN>, clearmods=all, mods=Shift),
+            // Level 3+5: PgDown
+            RedirectKey(key=<PGDN>, clearmods=all),
+            RedirectKey(key=<PGDN>, clearmods=all, mods=Shift)
+        ]
+    };
+
+    // I
+    key <AC09> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            i, i, i, i
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: M-f
+            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: Right
+            RedirectKey(key=<RGHT>, clearmods=all),
+            RedirectKey(key=<RGHT>, clearmods=all, mods=Shift),
+            // Level 3+5: End
+            RedirectKey(key=<END>, clearmods=all),
+            RedirectKey(key=<END>, clearmods=all)
+        ]
+    };
+
+    // O
+    key <AC10> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            o, o, o, o
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AC10>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // Z
+    key <AB01> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            z, z, z, z
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB01>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // X
+    key <AB02> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            x, x, x, x
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB02>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // C
+    key <AB03> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            c, c, c, c
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB03>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // D
+    key <AB04> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            d, d, d, d
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB04>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // V
+    key <AB05> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            v, v, v, v
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB05>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // M
+    key <AB06> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            m, m, m, m
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            // Level 3: M-y
+            RedirectKey(key=<AD09>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AD09>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: Shift-Insert
+            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
+            RedirectKey(key=<INS>, clearmods=all, mods=Shift),
+            // Level 3+5: C-M-y
+            RedirectKey(key=<AD09>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AD09>, clearmods=all, mods=Shift+Control+Mod1)
+        ]
+    };
+
+    // H
+    key <AB07> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            h, h, h, h
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB07>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // ,
+    key <AB08> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            comma, comma, comma, comma
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB08>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // .
+    key <AB09> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            period, period, period, period
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB09>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // -
+    key <AB10> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            minus, minus, minus, minus
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Control),
+            RedirectKey(key=<AB10>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+
+    // space
+    key <SPCE> {
+        symbols[Group1] = [
+            NoSymbol, NoSymbol, NoSymbol, NoSymbol,
+            space, space, space, space
+        ],
+        actions[Group1] = [
+            NoAction(), NoAction(),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Control),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Control),
+            RedirectKey(key=<SPCE>, clearmods=all, mods=Shift+Control)
+        ]
+    };
+};
+
+partial alphanumeric_keys
+xkb_symbols "group2" {
+    key.type[Group2] = "ONE_LEVEL";
+
+    key <AE02> {
+        symbols[Group2] = [ at ]
+    };
+    key <AE03> {
+        symbols[Group2] = [ sterling ]
+    };
+    key <AE04> {
+        symbols[Group2] = [ EuroSign ]
+    };
+    key <AD01> {
+        symbols[Group2] = [ less ]
+    };
+    key <AD02> {
+        symbols[Group2] = [ greater ]
+    };
+    key <AD03> {
+        symbols[Group2] = [ equal ]
+    };
+    key <AD08> {
+        symbols[Group2] = [ bracketleft ]
+    };
+    key <AD09> {
+        symbols[Group2] = [ bracketright ]
+    };
+    key <AD09> {
+        symbols[Group2] = [ bracketright ]
+    };
+    key <AD09> {
+        symbols[Group2] = [ bracketright ]
+    };
+    key <AC01> {
+        symbols[Group2] = [ underscore ]
+    };
+    key <AC02> {
+        symbols[Group2] = [ minus ]
+    };
+    key <AC03> {
+        symbols[Group2] = [ slash ]
+    };
+    key <AC04> {
+        symbols[Group2] = [ question ]
+    };
+    key <AC07> {
+        symbols[Group2] = [ braceleft ]
+    };
+    key <AC08> {
+        symbols[Group2] = [ parenleft ]
+    };
+    key <AC09> {
+        symbols[Group2] = [ parenright ]
+    };
+    key <AC10> {
+        symbols[Group2] = [ braceright ]
+    };
+    key <AB01> {
+        symbols[Group2] = [ bar ]
+    };
+    key <AB03> {
+        symbols[Group2] = [ colon ]
+    };
+    key <AB05> {
+        symbols[Group2] = [ semicolon ]
+    };
+};
