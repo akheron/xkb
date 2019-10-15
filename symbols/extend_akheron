@@ -4,7 +4,7 @@ xkb_symbols "akheron" {
     include "colemak(cmk_ed_dh)"
     include "level3(lalt_switch)"
     include "extend_akheron(alt_lwin)"
-    include "level5(caps_switch_lock)"
+    include "extend_akheron(caps_switch)"
     include "group(switch)"
     include "extend_akheron(lv5)"
     include "extend_akheron(group2)"
@@ -15,6 +15,15 @@ partial modifier_keys
 xkb_symbols "alt_lwin" {
     key <LWIN> { [ Alt_L ] };
     modifier_map Mod1 { <LWIN> };
+};
+
+partial modifier_keys
+xkb_symbols "caps_switch" {
+    include "level5(modifier_mapping)"
+    key <CAPS> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level5_Shift ]
+    };
 };
 
 partial alphanumeric_keys modifier_keys
