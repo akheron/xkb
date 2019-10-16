@@ -7,7 +7,7 @@ I've moved many AltGr bindings to a more comfortable location, and
 added an "extend" layer (inspired by [DreymaR's Big Bag of Keyboard
 Tricks]), which is activated by pressing Caps Lock, left Alt, or both,
 and has e.g. arrows, Backspace, Delete and many Emacs specific keys.
-Right Win key, Menu key and Print Screen key act as Super (Mod4).
+Caps Lock and Super have been moved to better locations as well.
 
 This is the base layout. By pressing AltGr, you get the symbols in the lower right.
 ```
@@ -15,17 +15,17 @@ This is the base layout. By pressing AltGr, you get the symbols in the lower rig
 │ ~   │ !   │ "   │ #   │ $   │ %   │ &   │ /   │ (   │ )   │ =   │ ?   │ ^   ┃         ┃
 │ `   │ 1   │ 2 @ │ 3 £ │ 4 € │ 5   | 6   │ 7   │ 8   │ 9   │ 0   │ + \ │ ^   ┃Backspace┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-┃       ┃ Q   │ W   │ F   │ P   │ B   │ J   │ L   │ U   │ Y   │ Ö   │ Å   │     ┃       ┃
-┃ Tab   ┃ q < │ w > │ f = │ p   │ b   │ j   │ l   │ u [ │ y ] │ ö   │ å   │     ┃ Enter ┃
+┃       ┃ Q   │ W   │ F   │ P   │ B   │ J   │ L   │ U   │ Y   │ Ö   │ Å   │Caps ┃       ┃
+┃ Tab   ┃ q < │ w > │ f = │ p   │ b   │ j   │ l   │ u [ │ y ] │ ö   │ å   │ Lock┃ Enter ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃        ┃ A   │ R   │ S   │ T   │ G   │ K   │ N   │ E   │ I   │ O   │ Ä   │ *   ┃      ┃
 ┃ Ctrl   ┃ a _ │ r - │ s / │ t ? │ g   │ k   │ n { │ e ( │ i ) │ o } │ ä   │ '   ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃ Z   │ X   │ C   │ D   │ V   │Caps │ M   │ H   │ ;   │ :   │ _   ┃              ┃
-┃Shift ┃ z | │ x   │ c : │ d ; │ v   │ Lock│ m   │ h   │ ,   │ .   │ -   ┃     Shift    ┃
+┃      ┃ Z   │ X   │ C   │ D   │ V   │     | M   │ H   │ ;   │ :   │ _   ┃              ┃
+┃Shift ┃ z | │ x   │ c : │ d ; │ v   │Super│ m   │ h   │ ,   │ .   │ -   ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
-┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
+┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
@@ -38,14 +38,14 @@ press left Control to get their original control key:
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-┃ Tab   ┃     │     │     │     │     │     │  ⌫  │  ↑  │  ⌦  │     │     │     ┃ Enter ┃
+┃       ┃     │     │     │     │     │     │     │     │     │     │     │Caps ┃       ┃
+┃ Tab   ┃     │     │     │     │     │     │  ⌫  │  ↑  │  ⌦  │     │     │ Lock┃ Enter ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃Pressed!┃     │     │     │     │     │     │     │     │     │     │     │     ┃      ┃
 ┃ Ctrl!  ┃     │     │     │     │     │ C-x │  ←  │  ↓  │  →  │     │     │     ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃     │     │     │     │     │Caps │Shift│     │     │     │     ┃              ┃
-┃Shift ┃     │     │     │     │     │ Lock│ Ins │     │     │     │     ┃     Shift    ┃
+┃      ┃     │     │     │     │     │     │Shift│     │     │     │     ┃              ┃
+┃Shift ┃     │     │     │     │     │Super│ Ins │     │     │     │     ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
 ┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
@@ -60,17 +60,17 @@ The left Win key acts as an unmodified Alt (Meta1).
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-┃ Tab   ┃     │     │     │     │     │     │ C-w │     │ M-d │     │     │     ┃ Enter ┃
+┃       ┃     │     │     │     │     │     │     │     │     │     │     │Caps ┃       ┃
+┃ Tab   ┃     │     │     │     │     │     │ C-w │     │ M-d │     │     │ Lock┃ Enter ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃        ┃     │     │     │     │     │     │     │     │     │     │     │     ┃      ┃
 ┃ Ctrl   ┃     │     │     │     │     │     │ M-b │     │ M-f │     │     │     ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃     │     │     │     │     │Caps │     │     │     │     │     ┃              ┃
-┃Shift ┃     │     │     │     │     │ Lock│ M-y │     │     │     │     ┃     Shift    ┃
+┃      ┃     │     │     │     │     │     │     │     │     │     │     ┃              ┃
+┃Shift ┃     │     │     │     │     │Super│ M-y │     │     │     │     ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃Pressed┃                                   ┃       ┃       ┃       ┃
-┃ Ctrl  ┃ Alt   ┃  Alt! ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
+┃ Ctrl  ┃ Alt   ┃  Alt! ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
 ┗━━━━━━━┻━━━━━━━┻━━━━━━━┹───────────────────────────────────┺━━━━━━━┻━━━━━━━┻━━━━━━━┛
 ```
 
@@ -81,14 +81,14 @@ When both Caps Lock and Left Alt are pressed:
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃         ┃
 │     │     │     │     │     │     │     │     │     │     │     │     │     ┃Backspace┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
-┃       ┃     │     │     │     │     │     │     │     │     │     │     │     ┃       ┃
-┃ Tab   ┃     │     │     │     │     │     │     │ PgUp│ C-k │     │     │     ┃ Enter ┃
+┃       ┃     │     │     │     │     │     │     │     │     │     │     │Caps ┃       ┃
+┃ Tab   ┃     │     │     │     │     │     │     │ PgUp│ C-k │     │     │ Lock┃ Enter ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃Pressed ┃     │     │     │     │     │     │     │     │     │     │     │     ┃      ┃
 ┃ Ctrl!  ┃     │     │     │     │     │     │ Home│ PgDn│ End │     │     │     ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃     │     │     │     │     │Caps │     │     │     │     │     ┃              ┃
-┃Shift ┃     │     │     │     │     │ Lock│     │     │     │     │     ┃     Shift    ┃
+┃      ┃     │     │     │     │     │     │     │     │     │     │     ┃              ┃
+┃Shift ┃     │     │     │     │     │Super│     │     │     │     │     ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃Pressed┃                                   ┃       ┃       ┃       ┃
 ┃ Ctrl  ┃ Meta  ┃  Alt! ┃                Space              ┃ AltGr ┃ Super ┃ Ctrl  ┃
