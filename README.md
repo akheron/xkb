@@ -1,16 +1,13 @@
 # My XKB config
 
-This is my XKB config. It's based on xkeyboard-config 2.27 and
-[DreymaR's Big Bag of Keyboard Tricks].
-
-It's basically [Colemak] with [Mod-DH], keeping most of the local
-Finnish symbols from the `fi` keymap in place.
+My keyboard layout is basically [Colemak] with [Mod-DH], keeping most
+of the local Finnish symbols from the `fi` keymap in place.
 
 I've moved many AltGr bindings to a more comfortable location, and
-added an "extend" layer (inspired by DreymaR), which is activated by
-pressing Caps Lock, left Alt, or both, and has e.g. arrows, Backspace,
-Delete and many Emacs specific keys. Right Win key, Menu key and Print
-Screen key act as Super (Mod4).
+added an "extend" layer (inspired by [DreymaR's Big Bag of Keyboard
+Tricks]), which is activated by pressing Caps Lock, left Alt, or both,
+and has e.g. arrows, Backspace, Delete and many Emacs specific keys.
+Right Win key, Menu key and Print Screen key act as Super (Mod4).
 
 This is the base layout. By pressing AltGr, you get the symbols in the lower right.
 ```
@@ -100,11 +97,10 @@ When both Caps Lock and Left Alt are pressed:
 
 ## Usage
 
-Copy all the files in this repository to `/usr/share/X11/xkb`. (It's
-probably a good idea to take a backup first.)
+Copy the file `akheron` to `/usr/share/X11/xkb/symbols`.
 
-To activate the layout, run `setxkbmap -rules evdev -model pc105curl
--layout akheron -variant '' -option ''`
+Activate the layout: `setxkbmap -rules evdev -model pc105 -layout
+akheron -variant '' -option ''`
 
 To make the changes persistent, add the following to
 `/etc/X11/xorg.conf`, or `/etc/X11/xorg.conf.d/00-keyboard.conf`
@@ -114,7 +110,7 @@ Section "InputClass"
     Identifier "akheron"
     MatchIsKeyboard "on"
     Option  "XkbRules"         "evdev"
-    Option  "XkbModel"         "pc105curl"
+    Option  "XkbModel"         "pc105"
     Option  "XkbLayout"        "akheron"
     Option  "XkbVariant"       ""
     Option  "XkbOptions"       ""
