@@ -117,6 +117,18 @@ Section "InputClass"
 EndSection
 ```
 
+## Known issues
+
+For some reason, key repeat stops working if the keymap is made
+persistent as described above. It can be fixed by running the
+following shell script after X has started, e.g. in `~/.xinitrc`:
+
+```
+for keycode in $(seq 8 255); do
+    xset r $keycode
+done
+```
+
 [DreymaR's Big Bag of Keyboard Tricks]: https://github.com/DreymaR/BigBagKbdTrixXKB
 [Colemak]: https://colemak.com
 [Mod-DH]: https://colemakmods.github.io/mod-dh/
