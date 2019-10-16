@@ -215,12 +215,12 @@ xkb_symbols "akheron" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Mod1),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Control+Mod1),
-            RedirectKey(key=<AE10>, clearmods=all, mods=Shift+Control+Mod1)
+            RedirectKey(key=<AE11>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE11>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE11>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Control+Mod1)
         ]
     };
 
@@ -233,12 +233,12 @@ xkb_symbols "akheron" {
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Control),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Control),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Mod1),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Control+Mod1),
-            RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Control+Mod1)
+            RedirectKey(key=<AE12>, clearmods=all, mods=Control),
+            RedirectKey(key=<AE12>, clearmods=all, mods=Shift+Control),
+            RedirectKey(key=<AE12>, clearmods=all, mods=Mod1),
+            RedirectKey(key=<AE12>, clearmods=all, mods=Shift+Mod1),
+            RedirectKey(key=<AE12>, clearmods=all, mods=Control+Mod1),
+            RedirectKey(key=<AE12>, clearmods=all, mods=Shift+Control+Mod1)
         ],
         type[Group2] = "ONE_LEVEL",
         symbols[Group2] = [ backslash ]
