@@ -7,7 +7,8 @@ I've moved many AltGr bindings to a more comfortable location, and
 added an "extend" layer (inspired by [DreymaR's Big Bag of Keyboard
 Tricks]), which is activated by pressing Caps Lock, left Alt, or both,
 and has e.g. arrows, Backspace, Delete and many Emacs specific keys.
-Caps Lock and Super have been moved to better locations as well.
+Caps Lock (locked) and Super (latched) have been moved to better locations as
+well.
 
 This is the base layout. By pressing AltGr, you get the symbols in the lower right.
 ```

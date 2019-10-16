@@ -938,7 +938,8 @@ xkb_symbols "akheron" {
     // AB05 (B in QWERTY) is Super (Mod4)
     key <AB05> {
         type[Group1] = "ONE_LEVEL",
-        symbols[Group1] = [ Super_L ]
+        symbols[Group1] = [ Super_L ],
+        actions[Group1] = [ LatchMods(modifiers=Mod4) ]
     };
     modifier_map Mod4 { <AB05> };
 };
