@@ -221,7 +221,9 @@ xkb_symbols "akheron" {
             RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE11>, clearmods=all, mods=Control+Mod1),
             RedirectKey(key=<AE11>, clearmods=all, mods=Shift+Control+Mod1)
-        ]
+        ],
+        type[Group2] = "ONE_LEVEL",
+        symbols[Group2] = [ backslash ]
     };
 
     // ^
@@ -239,9 +241,7 @@ xkb_symbols "akheron" {
             RedirectKey(key=<AE12>, clearmods=all, mods=Shift+Mod1),
             RedirectKey(key=<AE12>, clearmods=all, mods=Control+Mod1),
             RedirectKey(key=<AE12>, clearmods=all, mods=Shift+Control+Mod1)
-        ],
-        type[Group2] = "ONE_LEVEL",
-        symbols[Group2] = [ backslash ]
+        ]
     };
 
     // Tab
