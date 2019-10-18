@@ -381,9 +381,9 @@ xkb_symbols "akheron" {
             // Level 3: Backspace
             RedirectKey(key=<BKSP>, clearmods=all),
             RedirectKey(key=<BKSP>, clearmods=all, mods=Shift),
-            // Level 5: C-w
-            RedirectKey(key=<AD02>, clearmods=all, mods=Control),
-            RedirectKey(key=<AD02>, clearmods=all, mods=Shift+Control),
+            // Level 5: C-backspace
+            RedirectKey(key=<BKSP>, clearmods=all, mods=Control),
+            RedirectKey(key=<BKSP>, clearmods=all, mods=Shift+Control),
             // Level 3+5: -
             RedirectKey(key=<AD07>, clearmods=all, mods=Control+Mod1),
             RedirectKey(key=<AD07>, clearmods=all, mods=Shift+Control+Mod1)
@@ -598,9 +598,9 @@ xkb_symbols "akheron" {
             // Level 3: Left
             RedirectKey(key=<LEFT>, clearmods=all),
             RedirectKey(key=<LEFT>, clearmods=all, mods=Shift),
-            // Level 5: M-b
-            RedirectKey(key=<AD05>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AD05>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: C-left
+            RedirectKey(key=<LEFT>, clearmods=all, mods=Control),
+            RedirectKey(key=<LEFT>, clearmods=all, mods=Shift+Control),
             // Level 3+5: Home
             RedirectKey(key=<HOME>, clearmods=all),
             RedirectKey(key=<HOME>, clearmods=all, mods=Shift)
@@ -642,12 +642,12 @@ xkb_symbols "akheron" {
             // Level 3: Right
             RedirectKey(key=<RGHT>, clearmods=all),
             RedirectKey(key=<RGHT>, clearmods=all, mods=Shift),
-            // Level 5: M-f
-            RedirectKey(key=<AD03>, clearmods=all, mods=Mod1),
-            RedirectKey(key=<AC03>, clearmods=all, mods=Shift+Mod1),
+            // Level 5: C-right
+            RedirectKey(key=<RGHT>, clearmods=all, mods=Control),
+            RedirectKey(key=<RGHT>, clearmods=all, mods=Shift+Control),
             // Level 3+5: End
             RedirectKey(key=<END>, clearmods=all),
-            RedirectKey(key=<END>, clearmods=all)
+            RedirectKey(key=<END>, clearmods=all, mods=Shift)
         ],
         type[Group2] = "ONE_LEVEL",
         symbols[Group2] = [ parenright ]
