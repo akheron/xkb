@@ -423,7 +423,7 @@ xkb_symbols "akheron" {
             // Level 3: Delete
             RedirectKey(key=<DELE>, clearmods=Mod3+Mod5),
             RedirectKey(key=<DELE>, clearmods=Mod3+Mod5, mods=Shift),
-            // Level 5: C-Celete
+            // Level 5: C-Delete
             RedirectKey(key=<DELE>, clearmods=Mod3+Mod5, mods=Control),
             RedirectKey(key=<DELE>, clearmods=Mod3+Mod5, mods=Shift+Control),
             // Level 3+5: C-k
