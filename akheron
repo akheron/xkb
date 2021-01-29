@@ -451,8 +451,14 @@ xkb_symbols "akheron" {
         ]
     };
 
-    // Å
+    // Escape
     key <AD11> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Escape ]
+    };
+
+    // Å
+    key <AD12> {
         symbols[Group1] = [
             aring, Aring, aring, aring,
             aring, aring, aring, aring
@@ -466,12 +472,6 @@ xkb_symbols "akheron" {
             RedirectKey(key=<AD11>, clearmods=Mod3+Mod5, mods=Control+Mod1),
             RedirectKey(key=<AD11>, clearmods=Mod3+Mod5, mods=Shift+Control+Mod1)
         ]
-    };
-
-    // Caps Lock
-    key <AD12> {
-        type[Group1] = "ONE_LEVEL",
-        symbols[Group1] = [ Caps_Lock ]
     };
 
     // A
@@ -934,6 +934,12 @@ xkb_symbols "akheron" {
         symbols[Group1] = [ Alt_L ]
     };
     modifier_map Mod1 { <LWIN> };
+
+    // Escape acts as Caps Lock
+    key <ESC> {
+        type[Group1] = "ONE_LEVEL",
+        symbols[Group1] = [ Caps_Lock ]
+    };
 
     // AB05 (B in QWERTY) is Super (Mod4)
     key <AB05> {
