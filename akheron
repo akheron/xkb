@@ -226,12 +226,12 @@ xkb_symbols "akheron" {
         symbols[Group2] = [ backslash ]
     };
 
-    // ^
+    // Å
     key <AE12> {
         type[Group1] = "EIGHT_LEVEL",
         symbols[Group1] = [
-            asciicircum, dead_circumflex, asciicircum, asciicircum,
-            asciicircum, asciicircum, asciicircum, asciicircum
+            aring, Aring, aring, aring,
+            aring, aring, aring, aring
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
@@ -457,11 +457,11 @@ xkb_symbols "akheron" {
         symbols[Group1] = [ Escape ]
     };
 
-    // Å
+    // ^
     key <AD12> {
         symbols[Group1] = [
-            aring, Aring, aring, aring,
-            aring, aring, aring, aring
+            asciicircum, dead_circumflex, asciicircum, asciicircum,
+            asciicircum, asciicircum, asciicircum, asciicircum
         ],
         actions[Group1] = [
             NoAction(), NoAction(),
