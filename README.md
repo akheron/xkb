@@ -1,6 +1,6 @@
 # My XKB config
 
-My keyboard layout is basically [Colemak] with [Mod-DH], keeping most
+My keyboard layout is basically [Colemak] with [Mod-DHk], keeping most
 of the local Finnish symbols from the `fi` keymap in place.
 
 I've moved many AltGr bindings to a more comfortable location, and
@@ -136,4 +136,4 @@ done
 
 [DreymaR's Big Bag of Keyboard Tricks]: https://github.com/DreymaR/BigBagKbdTrixXKB
 [Colemak]: https://colemak.com
-[Mod-DH]: https://colemakmods.github.io/mod-dh/
+[Mod-DHk]: https://colemakmods.github.io/mod-dh/
