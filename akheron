@@ -46,10 +46,10 @@ xkb_symbols "akheron" {
     key <AB03> { [d, D, semicolon, NoSymbol] };
     key <AB04> { [v, V] };
     key <AB06> { [m, M] };
-    key <AB07> { [h, H] };
-    key <AB08> { [comma, semicolon] };
-    key <AB09> { [period, colon] };
-    key <AB10> { [minus, underscore] };
+    key <AB07> { [h, H, Left, BackSpace] };
+    key <AB08> { [comma, semicolon, Down, Next] };
+    key <AB09> { [period, colon, Up, Prior] };
+    key <AB10> { [minus, underscore, Right ] };
     key <SPCE> { [space, space] };
 
     // Caps Lock acts as Control

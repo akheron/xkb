@@ -22,8 +22,8 @@ This is the base layout. By pressing AltGr, you get the symbols in the lower rig
 ┃        ┃ A   │ R   │ S   │ T   │ G   │ K   │ N   │ E   │ I   │ O   │ Ä   │ *   ┃      ┃
 ┃ Ctrl   ┃ a _ │ r - │ s / │ t ? │ g   │ k   │ n { │ e ( │ i ) │ o } │ ä   │ '   ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃ Z   │ X   │ C   │ D   │ V   │     | M   │ H   │ ;   │ :   │ _   ┃              ┃
-┃Shift ┃ z | │ x   │ c : │ d ; │ v   │Super│ m   │ h   │ ,   │ .   │ -   ┃     Shift    ┃
+┃      ┃ Z   │ X   │ C   │ D   │ V   │     | M   │ H ⌫ │ ; ↡ │ : ↟ │ _   ┃              ┃
+┃Shift ┃ z | │ x   │ c : │ d ; │ v   │Super│ m   │ h ← │ , ↓ │ . ↑ │ - → ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
 ┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
