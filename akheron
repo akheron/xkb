@@ -19,8 +19,8 @@ xkb_symbols "akheron" {
     key <AD01> { [q, Q, less, NoSymbol] };
     key <AD02> { [w, W, greater, NoSymbol] };
     key <AD03> { [f, F, equal, NoSymbol] };
-    key <AD04> { [p, P] };
-    key <AD05> { [b, B] };
+    key <AD04> { [p, P, Left] };
+    key <AD05> { [b, B, Right] };
     key <AD06> { [j, J] };
     key <AD07> { [l, L] };
     key <AD08> { [u, U, bracketleft, NoSymbol] };
@@ -32,7 +32,7 @@ xkb_symbols "akheron" {
     key <AC02> { [r, R, minus, NoSymbol] };
     key <AC03> { [s, S, slash, NoSymbol] };
     key <AC04> { [t, T, question, NoSymbol] };
-    key <AC05> { [g, G] };
+    key <AC05> { [g, G, Up] };
     key <AC06> { [k, K] };
     key <AC07> { [n, N, braceleft, NoSymbol] };
     key <AC08> { [e, E, parenleft, NoSymbol] };
@@ -44,12 +44,12 @@ xkb_symbols "akheron" {
     key <AB01> { [x, X] };
     key <AB02> { [c, C, colon, NoSymbol] };
     key <AB03> { [d, D, semicolon, NoSymbol] };
-    key <AB04> { [v, V] };
+    key <AB04> { [v, V, Down] };
     key <AB06> { [m, M] };
-    key <AB07> { [h, H, Left, BackSpace] };
-    key <AB08> { [comma, semicolon, Down, Next] };
-    key <AB09> { [period, colon, Up, Prior] };
-    key <AB10> { [minus, underscore, Right ] };
+    key <AB07> { [h, H] };
+    key <AB08> { [comma, semicolon] };
+    key <AB09> { [period, colon] };
+    key <AB10> { [minus, underscore] };
     key <SPCE> { [space, space] };
 
     // Caps Lock acts as Control

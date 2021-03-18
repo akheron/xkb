@@ -6,7 +6,7 @@ of the local Finnish symbols from the `fi` keymap in place.
 I've moved many AltGr bindings to a more comfortable location. Caps Lock
 (locked) and Super (latched) have been moved to better locations as well.
 
-This is the base layout. By pressing AltGr, you get the symbols in the lower right.
+By pressing AltGr, you get the symbols in the lower right of each key.
 ```
 ┌─────┐
 │Caps │
@@ -17,13 +17,13 @@ This is the base layout. By pressing AltGr, you get the symbols in the lower rig
 │ `   │ 1   │ 2 @ │ 3 £ │ 4 € │ 5   | 6   │ 7   │ 8   │ 9   │ 0   │ + \ │ å   ┃    ⌫    ┃
 ┢━━━━━┷━┱───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┴─┬───┺━┳━━━━━━━┫
 ┃       ┃ Q   │ W   │ F   │ P   │ B   │ J   │ L   │ U   │ Y   │ Ö   │     │ ^   ┃       ┃
-┃ Tab   ┃ q < │ w > │ f = │ p   │ b   │ j   │ l   │ u [ │ y ] │ ö   │ Esc │ ^   ┃ Enter ┃
+┃ Tab   ┃ q < │ w > │ f = │ p ← │ b → │ j   │ l   │ u [ │ y ] │ ö   │ Esc │ ^   ┃ Enter ┃
 ┣━━━━━━━┻┱────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┴┬────┺┓      ┃
 ┃        ┃ A   │ R   │ S   │ T   │ G   │ K   │ N   │ E   │ I   │ O   │ Ä   │ *   ┃      ┃
-┃ Ctrl   ┃ a _ │ r - │ s / │ t ? │ g   │ k   │ n { │ e ( │ i ) │ o } │ ä   │ '   ┃      ┃
+┃ Ctrl   ┃ a _ │ r - │ s / │ t ? │ g ↑ │ k   │ n { │ e ( │ i ) │ o } │ ä   │ '   ┃      ┃
 ┣━━━━━━┳━┹───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┬─┴───┲━┷━━━━━┻━━━━━━┫
-┃      ┃ Z   │ X   │ C   │ D   │ V   │     | M   │ H ⌫ │ ; ↡ │ : ↟ │ _   ┃              ┃
-┃Shift ┃ z | │ x   │ c : │ d ; │ v   │Super│ m   │ h ← │ , ↓ │ . ↑ │ - → ┃     Shift    ┃
+┃      ┃ Z   │ X   │ C   │ D   │ V   │     | M   │ H   │ ;   │ :   │ _   ┃              ┃
+┃Shift ┃ z | │ x   │ c : │ d ; │ v ↓ │Super│ m   │ h   │ ,   │ .   │ -   ┃     Shift    ┃
 ┣━━━━━━┻┳━━━━┷━━┳━━┷━━━━┱┴─────┴─────┴─────┴─────┴─────┴────┲┷━━━━━┷┳━━━━┻━━┳━━━━━━━┳━━━┛
 ┃       ┃       ┃       ┃                                   ┃       ┃       ┃       ┃
 ┃ Ctrl  ┃ Alt   ┃  Alt  ┃                Space              ┃ AltGr ┃       ┃ Ctrl  ┃
