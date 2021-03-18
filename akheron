@@ -13,7 +13,7 @@ xkb_symbols "akheron" {
     key <AE08> { [8, parenleft] };
     key <AE09> { [9, parenright] };
     key <AE10> { [0, equal] };
-    key <AE11> { [plus, question, backslash, NoSymbol] };
+    key <AE11> { [plus, question] };
     key <AE12> { [aring, Aring] };
     key <TAB>  { [Tab, Tab] };
     key <AD01> { [q, Q, less, NoSymbol] };
@@ -41,7 +41,7 @@ xkb_symbols "akheron" {
     key <AC11> { [adiaeresis, Adiaeresis] };
     key <AC12> { [apostrophe, asterisk] };
     key <LSGT> { [z, Z, bar, NoSymbol] };
-    key <AB01> { [x, X] };
+    key <AB01> { [x, X, backslash] };
     key <AB02> { [c, C, colon, NoSymbol] };
     key <AB03> { [d, D, semicolon, NoSymbol] };
     key <AB04> { [v, V, Down] };
