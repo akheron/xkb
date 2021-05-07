@@ -1,4 +1,4 @@
-# My XKB config
+# My keyboard layout
 
 My keyboard layout is basically [Colemak] with [Mod-DHk], keeping most
 of the local Finnish symbols from the `fi` keymap in place.
@@ -102,6 +102,8 @@ When both Caps Lock and Left Alt are pressed:
 
 ## Usage
 
+### X11
+
 Copy the file `akheron` to `/usr/share/X11/xkb/symbols`.
 
 Activate the layout: `setxkbmap -rules evdev -model pc105 -layout
@@ -122,17 +124,11 @@ Section "InputClass"
 EndSection
 ```
 
-## Known issues
+### macOS
 
-For some reason, key repeat stops working if the keymap is made
-persistent as described above. It can be fixed by running the
-following shell script after X has started, e.g. in `~/.xinitrc`:
-
-```
-for keycode in $(seq 8 255); do
-    xset r $keycode
-done
-```
+Open the `akheron.bundle` folder in Keyboard Installer, install for the current
+user. Open Settings -> Keyboard -> Input methods and find select the `Colemak -
+akheron` layout under the the Finnish language.
 
 [DreymaR's Big Bag of Keyboard Tricks]: https://github.com/DreymaR/BigBagKbdTrixXKB
 [Colemak]: https://colemak.com
